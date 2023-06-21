@@ -1,11 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.scss';
-import Wrapper from './structure/wrapper/Wrapper';
+import Header from './structure/Header';
+import About from './structure/About';
+import Contact from './structure/Contact';
+import Footer from './structure/Footer';
+import Hero from './structure/Hero';
+import Projects from './structure/Projects';
 
 function App() {
-  return (
-    <Wrapper />
+  return (<div className="scroll-auto	h-screen overflow-x-scroll snap-y snap-mandatory">
+    <Header />
+    <Hero />
+    <About />
+    <Projects />
+    <Contact />
+    <Footer />
+  </div>
   );
 }
 

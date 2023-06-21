@@ -41,6 +41,7 @@
     ]
   },
   "devDependencies": {
+    "framer-motion": "^10.12.16",
     "sass": "^1.63.4"
   }
 }
