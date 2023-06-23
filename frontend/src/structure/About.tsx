@@ -1,7 +1,7 @@
 import ProfilePic from "../elements/ProfilePic";
 
 function About() {
-    return (<div className="snap-start flex justify-center items-center flex-col bg-blue-300 p-3.5  h-screen">
+    return (<div className="snap-start flex justify-center items-center flex-col bg-slate-800 text-slate-100 p-3.5 h-screen">
         <p className="text-2xl">About</p>
         <div className="flex flex-wrap items-center">
         <p className="mr-10 max-w-2xl">
