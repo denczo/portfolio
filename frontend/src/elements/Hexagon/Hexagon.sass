@@ -1,0 +1,55 @@
+:root
+    --hex-color: rgb(30 41 59 / 1)
+
+// .HexContainer
+//     display: inline-block
+//     transform: scale(3)
+//     margin-left: 55px
+
+// .HexContainer:nth-child(odd)
+//     margin-bottom: 270px
+//     // margin-right: 50px
+
+// tweak this
+$width: 250px
+$cos30deg: 0.86602540378
+$tan30deg: 0.57735026919
+$sqrt2: 1.41421356237
+
+// automatically computed
+$side-length: ($width / 2) / $cos30deg
+$cap-y-scale: $tan30deg
+$cap-height: ($width / 2) * $cap-y-scale
+$cap-unscaled-side-length: $width / $sqrt2
+
+.Hexagon:nth-child(odd)
+    margin-bottom: 10px
+
+.Hexagon
+    position: relative
+    width: $width
+    height: $side-length
+    margin-top: $cap-height
+    // background-image: url('../../../public/content/arcreactor.gif')
+    background-color: #393939
+    margin-left: 10px
+
+    &::before, &::after
+        content: ''
+        display: block
+        position: absolute
+        width: $cap-unscaled-side-length
+        height: $cap-unscaled-side-length
+        background-color: inherit
+        transform-origin: 0 0
+        transform: scaleY($cap-y-scale) rotate(-45deg)
+
+    &::before
+        top: 0
+
+    &::after
+        top: $side-length
+
+.Hexagon:hover
+    background-color: tomato
+    transition: background-color 500ms ease-in-out
