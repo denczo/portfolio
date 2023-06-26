@@ -8,7 +8,7 @@ function Projects() {
     {/* <div className="container grid grid-cols-3 gap-2 mx-auto"> */}
     <div className="flex justify-center flex-wrap max-w-4xl">
       {/* {data.map(item => <Project headline={item.title} text={item.text} tags={item.tags} />)} */}
-      {data.map(item => <Hexagon  headline={item.title} text={item.text} tags={item.tags}/>)}
+      {data.map(item => <Hexagon  headline={item.title} image={item.image} text={item.text} tags={item.tags}/>)}
     </div>
   </div>);
 }
