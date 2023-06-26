@@ -10,7 +10,7 @@ $cap-y-scale: $tan30deg
 $cap-height: ($width / 2) * $cap-y-scale
 $cap-unscaled-side-length: $width / $sqrt2
 
-.HexImage img
+.HexButtonImage img
     position: absolute
     height: $side-length * 2
     width: $width
@@ -24,12 +24,12 @@ $cap-unscaled-side-length: $width / $sqrt2
     transition: opacity 500ms ease-in-out
 
 
-.Hexagon:nth-child(odd)
+.HexagonButton:nth-child(odd)
     margin-bottom: 30px
     background-color: #414141
 
 
-.Hexagon
+.HexagonButton
     position: relative
     width: $width
     height: $side-length
@@ -54,7 +54,7 @@ $cap-unscaled-side-length: $width / $sqrt2
     &::after
         top: $side-length
 
-.Hexagon:hover
+.HexagonButton:hover
     // background-color: tomato
     // transition: opacity 500ms ease-in-out
 

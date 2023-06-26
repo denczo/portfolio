@@ -3,8 +3,8 @@ import "./HexButton.sass";
 
 function HexButton({ headline, image, text, tags }: { headline: string, image: string, text: string, tags: string[] }) {
     return (<>
-    <div className="Hexagon">
-    <div className="HexImage"><img className="" src={image} /></div>
+    <div className="HexagonButton">
+    <div className="HexButtonImage"><img className="" src={image} /></div>
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full z-10 text-white p-4 -mt-12 h-full">
             <div className="text-xl font-medium text-center mb-2">{headline}</div>
             
