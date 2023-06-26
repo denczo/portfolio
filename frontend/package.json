@@ -41,7 +41,9 @@
     ]
   },
   "devDependencies": {
+    "@types/react-router-hash-link": "^2.4.6",
     "framer-motion": "^10.12.16",
+    "react-router-hash-link": "^2.4.3",
     "sass": "^1.63.4"
   }
 }

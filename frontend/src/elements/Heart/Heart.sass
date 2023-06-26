@@ -1,0 +1,63 @@
+.container
+	aspect-ratio: 1 / 1
+	height: 100%
+	width: 32px
+	height: 32px
+	display: flex
+	justify-content: center
+	align-items: center
+	cursor: pointer
+
+.heart
+	width: 28px
+	height: 28px
+	margin-bottom: 10px
+	transform: rotate(45deg) scale(1)
+	&:before
+		content: ""
+		position: absolute
+		display: block
+		border-top-left-radius: 20px
+		border-bottom-left-radius: 20px
+		background-color: #c2c2c2
+		width: inherit
+		height: 16px
+		top: 12px
+		left: 0
+		-webkit-transition: background-color 0.2s ease-out
+		-moz-transition: background-color 0.2s ease-out
+		-o-transition: background-color 0.2s ease-out
+		transition: background-color 0.2s ease-out
+
+	&:after
+		content: ""
+		position: absolute
+		display: block
+		background-color: #c2c2c2
+		width: 16px
+		top: 0
+		left: 12px
+		height: inherit
+		border-top-left-radius: 20px
+		border-top-right-radius: 20px
+		-webkit-transition: background-color 0.2s ease-out
+		-moz-transition: background-color 0.2s ease-out
+		-o-transition: background-color 0.2s ease-out
+		transition: background-color 0.2s ease-out
+
+.container:hover .heart
+	animation: moveUpDown 0.5s ease-in-out infinite
+
+	&:before
+		background-color: tomato
+
+	&:after
+		background-color: tomato
+
+@keyframes moveUpDown
+	0%  
+		transform: rotate(45deg) scale(1)
+	50%  
+		transform: rotate(45deg) scale(1.2)
+	100%  
+		transform: rotate(45deg) scale(1)
