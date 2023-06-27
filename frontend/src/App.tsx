@@ -6,6 +6,7 @@ import Contact from './structure/Contact';
 import Footer from './structure/Footer';
 import Hero from './structure/Hero';
 import Projects from './structure/Projects';
+import Work from './structure/Work';
 
 function App() {
   return (<div className="scroll-auto	h-screen overflow-x-scroll snap-y snap-mandatory">
@@ -14,6 +15,7 @@ function App() {
     <About />
     <Projects />
     <Contact />
+    <Work />
     <Footer />
   </div>
   );

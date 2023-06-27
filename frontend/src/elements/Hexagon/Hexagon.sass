@@ -1,5 +1,7 @@
 // tweak this
-$width: 500px
+$width: 70px
+
+// $width: 500px
 $cos30deg: 0.86602540378
 $tan30deg: 0.57735026919
 $sqrt2: 1.41421356237
@@ -14,28 +16,29 @@ $cap-unscaled-side-length: calc($width / $sqrt2)
 
 .HexImage img
     position: absolute
-    height: $side-length * 2 - 70px
-    width: $width - 70px
+    height: $side-length * 2
+    width: $width
     object-fit: cover
     clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%)
     top: 50%
     left: 50%
     transform: translate(-50%, -50%)
     z-index: 1
-    opacity: 0.3
+    opacity: 0
     transition: opacity 500ms ease-in-out
 
 .Hexagon
     position: relative
     width: $width
     height: $side-length
-    margin-top: $cap-height
+    margin-top: $cap-height - 1
     // background-image: url('../../../public/content/arcreactor.gif')
-    // background-color: #4451ff
-    z-index: 20
+    background-color: #262626
+    // z-index: 0
     opacity: 0.01
-    left: 15%
-    top: -5%
+    margin-bottom: $cap-height - 1
+    // left: 15%
+    // top: -5%
 
     &::before, &::after
         content: ''
@@ -46,6 +49,15 @@ $cap-unscaled-side-length: calc($width / $sqrt2)
         background-color: inherit
         transform-origin: 0 0
         transform: scaleY($cap-y-scale) rotate(-45deg)
+        z-index: 0
+
+    div
+        position: absolute
+        z-index: 1
+        color: white
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
 
     &::before
         top: 0
