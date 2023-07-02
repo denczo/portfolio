@@ -10,10 +10,10 @@ const Work = () => {
         <div className="flex max-w-3xl">
           <div>
             <div className="flex justify-center items-center text-white rounded-full w-24 h-24  bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500">
-              <div className="flex h-20 w-20 bg-slate-800 rounded-full justify-center items-center"><b>{item.year.toString()}</b></div>
+              <div className="flex h-[90px] w-[90px] bg-slate-800 rounded-full justify-center items-center"><b>{item.year.toString()}</b></div>
             </div>
             {index < data.length - 1 ? 
-              <div className="w-2 bg-slate-900 m-auto h-full"></div> : <div className="h-16"></div>}
+              <div className="w-1 bg-slate-900 m-auto h-full"></div> : <div className="h-16"></div>}
           </div>
           <div className="flex flex-col justify-start h-max mt-9 pl-6 text-white">
             <div><b>{item.title + " @ " + item.company}</b></div>
