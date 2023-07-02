@@ -1,18 +1,29 @@
 import data from "../data/dataWork"
-import Hexagon from "../elements/Hexagon/Hexagon";
+import Tag from "../elements/Tag";
 
 
 const Work = () => {
-  return (<div className="snap-start flex justify-center items-center bg-slate-200 h-screen">
-    <div className="flex flex-col">
-
+  return (<div className="snap-start flex justify-center items-center bg-slate-800 h-screen">
+    <div className="flex flex-col justify-center ">
+      <div className="text-white text-xl font-bold mb-8 text-center">EXPERIENCE</div>
       {data.reverse().map((item, index) => <>
-        {index > 0 ?
-        <div className="border-l-4 border-gray-900 h-20 ml-8"></div> : <></>}
-        <div className="flex items-center">
-        {/* <div className="ml-4">{item.company}</div> */}
-          <Hexagon image={item.image} title={item.year.toString()}/>
-          <div className="ml-4">{item.title+" @ "+item.company}</div>
+        <div className="flex max-w-3xl">
+          <div>
+            <div className="flex justify-center items-center text-white rounded-full w-24 h-24  bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500">
+              <div className="flex h-20 w-20 bg-slate-800 rounded-full justify-center items-center"><b>{item.year.toString()}</b></div>
+            </div>
+            {index < data.length - 1 ? 
+              <div className="w-2 bg-slate-900 m-auto h-full"></div> : <div className="h-16"></div>}
+          </div>
+          <div className="flex flex-col justify-start h-max mt-9 pl-6 text-white">
+            <div><b>{item.title + " @ " + item.company}</b></div>
+            <div>{item.tasks}</div>
+            <ul className="mt-1 flex flex-wrap" aria-label="Technologies used:">
+              {item.tags.map(tag =>
+                <li className="mr-1.5 mt-2"><Tag title={tag} /></li>
+              )}
+            </ul>
+          </div>
         </div>
       </>)}
     </div>
