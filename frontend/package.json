@@ -44,6 +44,7 @@
     "@types/react-router-hash-link": "^2.4.6",
     "framer-motion": "^10.12.16",
     "react-router-hash-link": "^2.4.3",
+    "react-social-icons": "^5.15.0",
     "sass": "^1.63.4"
   }
 }

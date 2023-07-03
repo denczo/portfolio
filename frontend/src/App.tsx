@@ -9,7 +9,7 @@ import Projects from './structure/Projects';
 import Work from './structure/Work';
 
 function App() {
-  return (<div className="scroll-auto	h-screen overflow-x-scroll snap-y snap-mandatory">
+  return (<div className="scroll-auto	h-screen snap-y snap-mandatory">
     <Header />
     <Hero />
     <About />

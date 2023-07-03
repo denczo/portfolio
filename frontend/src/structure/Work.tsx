@@ -3,8 +3,8 @@ import Tag from "../elements/Tag";
 
 
 const Work = () => {
-  return (<div className="snap-start flex justify-center items-center bg-slate-800 h-screen">
-    <div className="flex flex-col justify-center ">
+  return (<div className="flex justify-center bg-slate-800 h-screen">
+    <div className="flex flex-col justify-center">
       <div className="text-white text-xl font-bold mb-8 text-center">EXPERIENCE</div>
       {data.reverse().map((item, index) => <>
         <div className="flex max-w-3xl">

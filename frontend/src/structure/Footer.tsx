@@ -1,8 +1,10 @@
+import SocialMedia from "../elements/SocialMedia";
+
 function Footer() {
-    return (<div className="flex justify-center items-center bg-slate-400 h-32">
-    <h1>Copyright &copy; {new Date().getFullYear()} Dennis-Immanuel Czogalla</h1>
-      </div>);
-  }
-  
-  export default Footer;
-  
+  return (<div className="flex justify-center flex-col items-center bg-gradient-to-r from-purple-600 to-blue-600 py-8">
+    <SocialMedia />
+    <div className="text-white font-bold">Copyright &copy; {new Date().getFullYear()} Dennis-Immanuel Czogalla</div>
+  </div>);
+}
+
+export default Footer;
