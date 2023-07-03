@@ -1,13 +1,15 @@
-import { NavHashLink as Link } from 'react-router-hash-link';
+import { HashLink } from 'react-router-hash-link';
+import { HashRouter as Router } from 'react-router-dom';
 
 function Navbar() {
   return (<div className="flex justify-around bg-black text-white h-10 items-center">
-    <div>About</div>
-    <div>Experience</div>
-    <div>Work</div>
-    <div>Contact</div>
-    <div>Resume</div>
-    </div>);
+    <Router>
+      <HashLink smooth to="/#About">About</HashLink>
+      <HashLink smooth to="/#Work">Work</HashLink>
+      <HashLink smooth to="/#Experience">Experience</HashLink>
+      <a href = {"./content/ResumeDeveloperCzogalla.pdf"} target = "_blank">Resume</a>
+    </Router>
+  </div>);
 }
 
 export default Navbar;
