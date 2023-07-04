@@ -11,6 +11,7 @@ This is a one page portfolio website which highlights skills, work experience, p
 ## Key features:
 
 - ReactJS, Typescript, Tailwind CSS
+- Responsive Design
 
 Check it out:
 https://denczo.github.io/portfolio/
