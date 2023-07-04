@@ -2,6 +2,14 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
+    screens: {
+      'mobile': {'max': '640px'},
+
+      'desktop': {'min': '640px'},
+      
+      'desktopXL': {'min': '1024px'},
+
+    },
     extend: {
       animation: {
         // typing: "typing 2s steps(14), blink 1.5s infinite"

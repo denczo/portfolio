@@ -7,7 +7,7 @@ function Navbar() {
       <HashLink smooth to="/#About">About</HashLink>
       <HashLink smooth to="/#Work">Work</HashLink>
       <HashLink smooth to="/#Experience">Experience</HashLink>
-      <a href = {"./content/ResumeDeveloperCzogalla.pdf"} target = "_blank">Resume</a>
+      <a href = {"./content/ResumeDeveloperCzogalla.pdf"} target = "_blank" rel="noreferrer">Resume</a>
     </Router>
   </div>);
 }

@@ -19,7 +19,7 @@ const data = [
         title: "Software Developer",
         company: "German Cancer Research Center",
         tasks: "worked with Biologists to transform medical data of 200k patients of existing databases for further analysis and created a database infrastructure for faster data queries which automatically receives the latest data of external scientific databases on a daily basis",
-        tags: ["JAVA", "JDBC", "Bash Script", "PostgreSQL", "MariaDB"],
+        tags: ["JAVA", "JDBC", "REST", "Bash Script", "PostgreSQL", "MariaDB"],
         image: "./content/dkfz.jpg",
         year: 2019
     },

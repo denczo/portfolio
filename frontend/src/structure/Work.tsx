@@ -3,7 +3,7 @@ import Tag from "../elements/Tag";
 
 
 const Work = () => {
-  return (<div id="Experience" className="flex justify-center bg-slate-800 h-screen">
+  return (<div id="Experience" className="flex justify-center bg-slate-800 min-h-full mobile:py-8 mobile:px-4">
     <div className="flex flex-col justify-center">
       <div className="text-white text-xl font-bold mb-8 text-center">EXPERIENCE</div>
       {data.reverse().map((item, index) => <div key={"W"+index} className="flex max-w-3xl">
