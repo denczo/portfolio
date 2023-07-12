@@ -8,7 +8,7 @@ const socialMedia = [
 ]
 
 const SocialMedia = () => {
-    return (<div className="flex justify-around w-[300px] mb-4">
+    return (<div className="flex justify-evenly flex-wrap mb-4 space-x-4">
         {socialMedia.map((item, index) => <SocialIcon key={index} className="Icon" fgColor={"#ffffff"} bgColor={"#1e293b"} url={item.url} />)}
     </div>
     );

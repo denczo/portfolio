@@ -1,14 +1,9 @@
-import { HashLink } from 'react-router-hash-link';
-import { HashRouter as Router } from 'react-router-dom';
+import Burger from './Burger';
+import DesktopMenu from './DesktopMenu';
 
-function Navbar() {
-  return (<div className="flex justify-around bg-black text-white h-10 items-center">
-    <Router>
-      <HashLink smooth to="/#About">About</HashLink>
-      <HashLink smooth to="/#Work">Work</HashLink>
-      <HashLink smooth to="/#Experience">Experience</HashLink>
-      <a href = {"./content/ResumeDeveloperCzogalla.pdf"} target = "_blank" rel="noreferrer">Resume</a>
-    </Router>
+function Navbar({setOpen} : {setOpen: any}) {
+  return (<div className="flex mobile:hidden desktop:justify-center mobile:justify-end bg-black text-white h-12 items-center">
+    <DesktopMenu setOpen={setOpen}/>
   </div>);
 }
 
