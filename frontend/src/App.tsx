@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import './App.scss';
 import Header from './structure/Header';
 import About from './structure/About';
@@ -11,12 +11,12 @@ import MobileMenu from './elements/MobileMenu';
 import Burger from './elements/Burger';
 
 function App() {
+    const [open, setOpen] = useState(false)
 
-  const [open, setOpen] = useState(false)
   return (<div className="scroll-auto	h-screen overflow-y-auto">
     <Burger open={open} setOpen={setOpen}/>
-    <MobileMenu open={open} setOpen={setOpen}/>
-    <Header setOpen={setOpen}/>
+    <MobileMenu open={open} />
+    <Header />
     <Hero />
     <About />
     <Projects />

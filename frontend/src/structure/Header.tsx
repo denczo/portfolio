@@ -1,8 +1,8 @@
 import Navbar from "../elements/Navbar";
 
-const Header = ({setOpen} : {setOpen: any}) => {
+const Header = () => {
     return (<div className="sticky top-0 bottom-0 z-50">
-        <Navbar setOpen={setOpen}/>
+        <Navbar />
     </div>);
 }
 

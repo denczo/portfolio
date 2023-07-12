@@ -1,8 +1,8 @@
 import MenuItems from "./MenuItems";
 
-function DesktopMenu({setOpen} : {setOpen: any}) {
+function DesktopMenu() {
     return ( <div className="flex justify-around w-full mobile:hidden">
-    <MenuItems setOpen={setOpen}/>
+    <MenuItems />
     </div>);
 }
 
