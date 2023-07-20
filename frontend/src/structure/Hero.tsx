@@ -5,20 +5,20 @@ function Hero() {
 
     <div className="flex relative w-full h-full items-center justify-center">
 
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 -mt-6 text-center w-full z-20 pointer-events-none text-white">
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 -mt-6 text-center w-full z-20 pointer-events-none text-white px-4">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.5 }}
         >
-          <p className="text-[72px] font-bold ">Hi, I'm Dennis</p>
+          <p className="desktop:text-[72px] mobile:text-[40px] font-bold ">Hi, I'm Dennis</p>
         </motion.div>
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 1.25 }}
         >
-          <p className="text-[48px]">A developer who brings ideas to life</p>
+          <p className="desktop:text-[48px] mobile:text-[32px]">A developer who brings ideas to life</p>
         </motion.div>
 
       </div>
