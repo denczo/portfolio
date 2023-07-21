@@ -15,7 +15,7 @@ const Work = () => {
               <div className="mobile:w-6 desktop:w-2 bg-slate-900 m-auto h-full"></div> : <div className="h-16"></div>}
           </div>
           <div className="flex flex-col justify-start h-max mt-9 desktop:pl-6 mobile:pl-4 text-white">
-            <div><b>{item.title + " @ " + item.company}</b></div>
+            <div className="font-bold">{item.title + " @ "}<span className="text-teal-400 font-bold">{item.company}</span></div>
             <div>{item.tasks}</div>
             <ul className="mt-1 flex flex-wrap" aria-label="Technologies used:">
               {item.tags.map((tag, index) =>

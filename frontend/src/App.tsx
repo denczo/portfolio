@@ -18,8 +18,8 @@ function App() {
     <Hero />
     <About />
     <Projects />
-    <Contact />
     <Work />
+    <Contact />
     <Footer />
   </div>
   );

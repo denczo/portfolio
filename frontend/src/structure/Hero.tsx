@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { HashLink } from 'react-router-hash-link';
 
 function Hero() {
   return (<div className="flex justify-center items-center flex-col h-screen bg-gradient-to-r from-purple-600 to-blue-600">
@@ -27,7 +28,9 @@ function Hero() {
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 2 }}
       >
-        <div className="mt-[500px] animate-bounce h-0 w-0 border-x-[16px] border-x-transparent border-t-[16px] border-b-white"></div>
+          <HashLink smooth to={"/#About"}>
+            <div className="mt-[500px] animate-bounce h-0 w-0 border-x-[16px] border-x-transparent border-t-[16px] border-b-white"></div>
+          </HashLink>
       </motion.div>
     </div>
 

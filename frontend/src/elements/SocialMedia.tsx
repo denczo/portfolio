@@ -2,7 +2,7 @@ import { SocialIcon } from 'react-social-icons';
 
 const socialMedia = [
     { url: "https://www.upwork.com/freelancers/~01a3417f302aa70c55" },
-    { url: "https://www.denicz.info" },
+    { url: "https://www.linkedin.com/in/denczo/" },
     { url: "https://github.com/denczo" },
     { url: "https://www.youtube.com/@pygineer" }
 ]
