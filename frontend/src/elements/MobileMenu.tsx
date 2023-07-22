@@ -9,7 +9,7 @@ const MobileMenu = () => {
 
     return (<>
     {isOpen ?
-    <div className="flex justify-evenly absolute flex-col text-white text-4xl pl-5 space-y-2 bg-black bg-opacity-90 w-full h-full z-40">
+    <div className="flex justify-between pt-20 absolute flex-col text-white text-4xl pl-5 bg-black backdrop-blur-md bg-opacity-40 w-full h-full z-40">
         <MenuItems />
         <SocialMedia />
     </div> : <></>

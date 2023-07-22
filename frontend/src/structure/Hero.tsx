@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { HashLink } from 'react-router-hash-link';
 import bulb from "../assets/images/lightbulb.svg"
-import hand from "../assets/images/Hand.png"
+import hand from "../assets/images/Hand.webp"
 
 function Hero() {
   return (<div className="flex justify-center items-center flex-col h-screen bg-gradient-to-r from-purple-600 to-blue-600">
@@ -21,7 +21,7 @@ function Hero() {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 1.5 }}
         >
-          <p className="desktop:text-[48px] mobile:text-[32px]">A developer who brings ideas to life</p>
+          <p className="desktop:text-[48px] mobile:text-[32px] animate-blinking">A developer who brings ideas to life</p>
         </motion.div>
 
       </div>
@@ -30,11 +30,11 @@ function Hero() {
       >
         <motion.div
           className="w-1/3"
-          initial={{ opacity: 0}}
-          animate={{ opacity: 1}}
+          initial={{ scale: 0}}
+          animate={{ scale: 1}}
           transition={{ duration: 0.1, delay: 2.45 }}
         >
-          <img className="opacity-50" src={bulb}></img>
+          <img className="opacity-50 animate-scalepulse" src={bulb} alt={"Lightbulb"}></img>
         </motion.div>
         <motion.div
           className="w-2/3"
@@ -42,14 +42,14 @@ function Hero() {
           animate={{ opacity: 1, y: "0vh" }}
           transition={{ duration: 0.25, delay: 2 }}
         >
-          <img className="opacity-30" src={hand}></img>
+          <img className="opacity-30" src={hand} alt={"Hand"}></img>
         </motion.div>
 
       </div>
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 0.5, delay: 2 }}
+        transition={{ duration: 0.5, delay: 3 }}
       >
         <HashLink smooth to={"/#About"}>
           <div className="-mt-8 animate-bounce h-0 w-0 border-x-[16px] border-x-transparent border-t-[16px] border-b-white"></div>

@@ -6,7 +6,7 @@ const Work = () => {
   return (<div id="Experience" className="flex justify-center bg-slate-800 min-h-full mobile:py-8 mobile:px-4">
     <div className="flex flex-col justify-center">
       {/* <div className="text-white text-xl font-bold mb-8 text-center">EXPERIENCE</div> */}
-      {data.reverse().map((item, index) => <div key={"W"+index} className="flex max-w-3xl">
+      {data.map((item, index) => <div key={"W"+index} className="flex max-w-3xl">
           <div>
             <div className="flex justify-center items-center text-white rounded-full desktop:w-24 mobile:mt-6 desktop:h-24 mobile:w-12 mobile:h-12 bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500">
               <div className="flex desktop:h-[90px] desktop:w-[90px] mobile:h-[45px] mobile:w-[45px] bg-slate-800 desktop:font-bold rounded-full justify-center items-center">{item.year.toString()}</div>

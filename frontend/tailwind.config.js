@@ -14,7 +14,8 @@ module.exports = {
       animation: {
         // typing: "typing 2s steps(14), blink 1.5s infinite"
         typing: "typing 2s steps(14)",
-        blinking: "blinking 10s linear infinite"
+        blinking: "blinking 10s linear infinite",
+        scalepulse: "scalepulse 8s ease-in-out infinite"
 
       },
       keyframes: {
@@ -28,6 +29,11 @@ module.exports = {
         },
         blinking: {
           to: { "background-position": "400%"}
+        },
+        scalepulse: {
+          '0%': { "scale": "1" },
+         '50%': { "scale": "1.15" },
+         '100%': { "scale": "1" },
         }
         
       },
