@@ -1,5 +1,5 @@
-// import { HashRouter as Router } from 'react-router-dom';
 import NavItem from './NavItem';
+import resume from '../assets/pdf/ResumeDeveloperCzogalla.pdf';
 
 const MenuItems = () => {
     return (<>
@@ -8,7 +8,7 @@ const MenuItems = () => {
         <NavItem title={"Experience"}/>
         <NavItem title={"Contact"}/>
         
-        <a className="transition ease-in-out duration-300 hover:text-violet-400" href={"./content/ResumeDeveloperCzogalla.pdf"} target="_blank" rel="noreferrer">Resume</a>
+        <a className="transition ease-in-out duration-300 hover:text-violet-400" href={resume} target="_blank" rel="noreferrer">Resume</a>
         </>);
 }
 
