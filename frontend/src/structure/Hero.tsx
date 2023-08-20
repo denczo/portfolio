@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { HashLink } from 'react-router-hash-link';
 import bulb from "../assets/images/lightbulb.svg"
 import hand from "../assets/images/Hand.webp"
+import Particles from '../elements/Particles';
 
 function Hero() {
   return (<div className="flex justify-center items-center flex-col h-screen bg-gradient-to-r from-purple-600 to-blue-600">
@@ -55,6 +56,8 @@ function Hero() {
           <div className="-mt-8 animate-bounce h-0 w-0 border-x-[16px] border-x-transparent border-t-[16px] border-b-white"></div>
         </HashLink>
       </motion.div>
+      <Particles />
+
     </div>
 
   </div>);
