@@ -1,7 +1,10 @@
+import { useEffect, useState } from 'react';
 import './Particles.scss';
 
 
 const Particles = () => {
+
+    const [ready, setReady] = useState(false);
 
     const createParticles = (amount: number) => {
         const particles = [];
@@ -14,8 +17,15 @@ const Particles = () => {
         return particles;
     }
 
+    useEffect(() => {
+        const timeout = setTimeout(() => {
+            setReady(true);
+        }, 2000)
+    }, [ready]);
+
+    if (!ready) return null;
     return (<div className="Particles">
-        {createParticles(20)}
+        {createParticles(30)}
     </div>);
 }
 

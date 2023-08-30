@@ -57,7 +57,6 @@ function Hero() {
         </HashLink>
       </motion.div>
       <Particles />
-
     </div>
 
   </div>);
