@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { AppState, actions } from "../Store";
+import { AppState, actions } from "../../../Store";
 
 const Burger = () => {
 

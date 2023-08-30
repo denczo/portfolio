@@ -1,4 +1,4 @@
-import ProfilePic from "../elements/ProfilePic";
+import ProfilePic from "../elements/static/ProfilePic";
 
 const About = () => {
     return (<div id="About" className="flex desktop:justify-center desktop:items-center flex-col bg-slate-800 text-slate-100 desktop:p-3.5 mobile:px-4 mobile:py-8 min-h-screen">

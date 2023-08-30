@@ -1,4 +1,4 @@
-import Tag from "./Tag";
+import Tag from "../../static/Tag";
 
 function Project({ headline, image, text, tags, link }: { headline: string, image: string, text: string, tags: string[], link: string }) {
     return (<a href={link}>

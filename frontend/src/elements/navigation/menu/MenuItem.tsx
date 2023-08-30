@@ -1,8 +1,8 @@
 import { useDispatch } from 'react-redux';
 import { HashLink } from 'react-router-hash-link';
-import { actions } from '../Store';
+import { actions } from '../../../Store';
 
-const NavItem = ({title}:{title:string}) => {
+const MenuItem = ({title}:{title:string}) => {
     const selected = "#"+title !== window.location.hash;
     const styling = "transition ease-in-out duration-300 hover:text-violet-400"
     const dispatch = useDispatch();
@@ -11,4 +11,4 @@ const NavItem = ({title}:{title:string}) => {
     );
 }
 
-export default NavItem;
+export default MenuItem;

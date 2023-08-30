@@ -1,4 +1,4 @@
-import Project from "../elements/Project";
+import Project from "../elements/navigation/links/Project";
 import data from "../data/data"
 
 function Projects() {

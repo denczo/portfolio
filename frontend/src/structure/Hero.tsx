@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { HashLink } from 'react-router-hash-link';
 import bulb from "../assets/images/lightbulb.svg"
 import hand from "../assets/images/Hand.webp"
-import Particles from '../elements/Particles';
+import Particles from '../elements/particles/Particles';
 
 function Hero() {
   return (<div className="flex justify-center items-center flex-col h-screen bg-gradient-to-r from-purple-600 to-blue-600">
