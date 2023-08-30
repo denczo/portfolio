@@ -35,7 +35,7 @@ function Hero() {
           animate={{ scale: 1}}
           transition={{ duration: 0.1, delay: 2.45 }}
         >
-          <img className="opacity-50 animate-scalepulse" src={bulb} alt={"Lightbulb"}></img>
+          <img className="opacity-50 animate-scalepulse w-full h-full" src={bulb} alt={"Lightbulb"}></img>
         </motion.div>
         <motion.div
           className="w-2/3"
@@ -43,7 +43,7 @@ function Hero() {
           animate={{ opacity: 1, y: "0vh" }}
           transition={{ duration: 0.25, delay: 2 }}
         >
-          <img className="opacity-30" src={hand} alt={"Hand"}></img>
+          <img className="opacity-30 w-full h-full" src={hand} alt={"Hand"} ></img>
         </motion.div>
 
       </div>
@@ -52,7 +52,7 @@ function Hero() {
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 3 }}
       >
-        <HashLink smooth to={"/#About"}>
+        <HashLink smooth to={"/#About"} aria-label='About'>
           <div className="-mt-8 animate-bounce h-0 w-0 border-x-[16px] border-x-transparent border-t-[16px] border-b-white"></div>
         </HashLink>
       </motion.div>

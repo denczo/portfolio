@@ -9,7 +9,7 @@ const socialMedia = [
 
 const SocialMedia = () => {
     return (<div className="flex justify-evenly flex-wrap mb-4 space-x-4">
-        {socialMedia.map((item, index) => <SocialIcon  key={index} className="Icon" fgColor={"#ffffff"} bgColor={"None"} url={item.url} />)}
+        {socialMedia.map((item, index) => <SocialIcon key={index} className="Icon" fgColor={"#ffffff"} bgColor={"None"} url={item.url} />)}
     </div>
     );
 }
