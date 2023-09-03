@@ -15,13 +15,18 @@ module.exports = {
         // typing: "typing 2s steps(14), blink 1.5s infinite"
         typing: "typing 2s steps(14)",
         blinking: "blinking 10s linear infinite",
-        scalepulse: "scalepulse 8s ease-in-out infinite"
+        scalepulse: "scalepulse 8s ease-in-out infinite",
+        fadeIn: "fadeIn 5s"
 
       },
       keyframes: {
         typing: {
           from: { width: "0" },
           to: { width: "14ch" }
+        },
+        fadeIn: {
+          from: { opacity: 0},
+          to: { opacity: 1}
         },
         blink: {
           from: { "border-right-color": "transparent" },

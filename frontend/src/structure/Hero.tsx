@@ -4,6 +4,7 @@ import bulb from "../assets/images/lightbulb.svg"
 import hand from "../assets/images/Hand.webp"
 import Particles from '../elements/particles/Particles';
 
+
 function Hero() {
   return (<div className="flex justify-center items-center flex-col h-screen bg-gradient-to-r from-purple-600 to-blue-600">
 
@@ -15,7 +16,7 @@ function Hero() {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.5 }}
         >
-          <p className="desktop:text-[72px] mobile:text-[40px] font-bold ">Hi, I'm Dennis</p>
+          <p className="desktop:text-[72px] mobile:text-[40px] font-bold">Hi, I'm Dennis</p>
         </motion.div>
         <motion.div
           initial={{ opacity: 0 }}
@@ -27,12 +28,12 @@ function Hero() {
 
       </div>
       <div
-        className="flex justify-center flex-col items-center"
+        className="flex justify-center flex-col items-center h-full"
       >
         <motion.div
           className="w-1/3"
-          initial={{ scale: 0}}
-          animate={{ scale: 1}}
+          initial={{ scale: 0 }}
+          animate={{ scale: 1 }}
           transition={{ duration: 0.1, delay: 2.45 }}
         >
           <img className="opacity-50 animate-scalepulse w-full h-full" src={bulb} alt={"Lightbulb"}></img>
@@ -43,19 +44,19 @@ function Hero() {
           animate={{ opacity: 1, y: "0vh" }}
           transition={{ duration: 0.25, delay: 2 }}
         >
-          <img className="opacity-30 w-full h-full" src={hand} alt={"Hand"} ></img>
+          <img className="opacity-30 w-full h-full" srcSet="../assets/images/Hand-0.5x.webp 0.5x, ../assets/images/Hand-0.25x.webp 0.25x" src={hand} alt={"Hand"} ></img>
         </motion.div>
-
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5, delay: 3 }}
+        >
+          <HashLink smooth to={"/#About"} aria-label='About'>
+            <div className="animate-bounce h-0 w-0 border-x-[16px] border-x-transparent border-t-[16px] border-b-white"></div>
+          </HashLink>
+        </motion.div>
       </div>
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.5, delay: 3 }}
-      >
-        <HashLink smooth to={"/#About"} aria-label='About'>
-          <div className="-mt-8 animate-bounce h-0 w-0 border-x-[16px] border-x-transparent border-t-[16px] border-b-white"></div>
-        </HashLink>
-      </motion.div>
+
       <Particles />
     </div>
 
