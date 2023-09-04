@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.cd5c5975.css",
-    "main.js": "/portfolio/static/js/main.12d23197.js",
-    "static/js/787.cda612ba.chunk.js": "/portfolio/static/js/787.cda612ba.chunk.js",
-    "static/media/quarkreactor.webp": "/portfolio/static/media/quarkreactor.d62bced932990125c3be.webp",
-    "static/media/Hand.webp": "/portfolio/static/media/Hand.81b3f47862933314c074.webp",
-    "static/media/RaspiBot.webp": "/portfolio/static/media/RaspiBot.9d9cc4cd8060e3fbabcb.webp",
-    "static/media/PortfolioPage.webp": "/portfolio/static/media/PortfolioPage.96162c896654521ddfbc.webp",
-    "static/media/KivyDesktop.webp": "/portfolio/static/media/KivyDesktop.0aaf957c26aa8b314e74.webp",
-    "static/media/MobileView.webp": "/portfolio/static/media/MobileView.360bdda3ca0971b11b86.webp",
-    "static/media/PyBlaster.webp": "/portfolio/static/media/PyBlaster.56526189575b2d821fab.webp",
-    "static/media/portrait.webp": "/portfolio/static/media/portrait.b9ca0528680157385d82.webp",
-    "static/media/ResumeDeveloperCzogalla.pdf": "/portfolio/static/media/ResumeDeveloperCzogalla.d92f7eabbf975c5e305c.pdf",
-    "static/media/lightbulb.svg": "/portfolio/static/media/lightbulb.70ae97c8bd05ce1db2175400d0e5f567.svg",
-    "index.html": "/portfolio/index.html",
-    "main.cd5c5975.css.map": "/portfolio/static/css/main.cd5c5975.css.map",
-    "main.12d23197.js.map": "/portfolio/static/js/main.12d23197.js.map",
-    "787.cda612ba.chunk.js.map": "/portfolio/static/js/787.cda612ba.chunk.js.map"
+    "main.css": "/static/css/main.fd38435f.css",
+    "main.js": "/static/js/main.f20cdcc3.js",
+    "static/js/787.cda612ba.chunk.js": "/static/js/787.cda612ba.chunk.js",
+    "static/media/quarkreactor.webp": "/static/media/quarkreactor.d62bced932990125c3be.webp",
+    "static/media/Hand.webp": "/static/media/Hand.81b3f47862933314c074.webp",
+    "static/media/RaspiBot.webp": "/static/media/RaspiBot.9d9cc4cd8060e3fbabcb.webp",
+    "static/media/PortfolioPage.webp": "/static/media/PortfolioPage.96162c896654521ddfbc.webp",
+    "static/media/KivyDesktop.webp": "/static/media/KivyDesktop.0aaf957c26aa8b314e74.webp",
+    "static/media/MobileView.webp": "/static/media/MobileView.360bdda3ca0971b11b86.webp",
+    "static/media/PyBlaster.webp": "/static/media/PyBlaster.56526189575b2d821fab.webp",
+    "static/media/portrait.webp": "/static/media/portrait.b9ca0528680157385d82.webp",
+    "static/media/ResumeDeveloperCzogalla.pdf": "/static/media/ResumeDeveloperCzogalla.d92f7eabbf975c5e305c.pdf",
+    "static/media/lightbulb.svg": "/static/media/lightbulb.70ae97c8bd05ce1db2175400d0e5f567.svg",
+    "index.html": "/index.html",
+    "main.fd38435f.css.map": "/static/css/main.fd38435f.css.map",
+    "main.f20cdcc3.js.map": "/static/js/main.f20cdcc3.js.map",
+    "787.cda612ba.chunk.js.map": "/static/js/787.cda612ba.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cd5c5975.css",
-    "static/js/main.12d23197.js"
+    "static/css/main.fd38435f.css",
+    "static/js/main.f20cdcc3.js"
   ]
 }
