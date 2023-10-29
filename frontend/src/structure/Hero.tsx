@@ -28,7 +28,7 @@ function Hero() {
 
       </div>
       <div
-        className="flex justify-center flex-col items-center h-full"
+        className="flex justify-center flex-col items-center h-full z-10"
       >
         <motion.div
           className="w-1/3"
