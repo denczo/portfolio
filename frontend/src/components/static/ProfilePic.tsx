@@ -1,4 +1,4 @@
-import portrait from "../../assets/images/portrait.webp";
+const portrait = "/images/portrait.webp";
 
 function ProfilePic() {
   return (<>

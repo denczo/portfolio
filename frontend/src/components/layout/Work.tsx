@@ -1,5 +1,5 @@
-import data from "../data/dataWork"
-import Tag from "../elements/static/Tag";
+import data from "../../data/dataWork"
+import Tag from "../static/Tag";
 
 
 const Work = () => {

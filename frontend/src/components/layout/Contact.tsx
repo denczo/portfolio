@@ -1,4 +1,4 @@
-import MailTo from "../elements/navigation/links/MailTo";
+import MailTo from "../navigation/links/MailTo";
 
 function Contact() {
   return (<div id="Contact" className="flex justify-center text-white h-full flex-col items-center bg-gradient-to-r from-purple-600 to-blue-600 py-8">

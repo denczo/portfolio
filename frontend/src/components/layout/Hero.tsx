@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion';
-import { HashLink } from 'react-router-hash-link';
-import bulb from "../assets/images/lightbulb.svg"
-import hand from "../assets/images/Hand.webp"
-import Particles from '../elements/particles/Particles';
+import Particles from '../particles/Particles';
+import Link from 'next/link';
 
+const bulb = "/images/lightbulb.svg"
+const hand = "/images/Hand.webp"
 
 function Hero() {
   return (<div className="flex justify-center items-center flex-col h-screen bg-gradient-to-r from-purple-600 to-blue-600">
@@ -51,9 +51,9 @@ function Hero() {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 3 }}
         >
-          <HashLink smooth to={"/#About"} aria-label='About'>
+          <Link href={"/#About"} aria-label='About'>
             <div className="animate-bounce h-0 w-0 border-x-[16px] border-x-transparent border-t-[16px] border-b-white"></div>
-          </HashLink>
+          </Link>
         </motion.div>
       </div>
 

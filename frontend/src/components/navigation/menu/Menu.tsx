@@ -1,5 +1,5 @@
 import MenuItem from './MenuItem';
-import resume from '../../../assets/pdf/ResumeDeveloperCzogalla.pdf';
+// import resume from '../../../assets/pdf/ResumeDeveloperCzogalla.pdf';
 
 const Menu = () => {
     return (<>
@@ -8,7 +8,7 @@ const Menu = () => {
         <MenuItem title={"Experience"}/>
         <MenuItem title={"Contact"}/>
         
-        <a className="transition ease-in-out duration-300 hover:text-violet-400" href={resume} aria-label="Resume" target="_blank" rel="noreferrer">Resume</a>
+        {/* <a className="transition ease-in-out duration-300 hover:text-violet-400" href={resume} aria-label="Resume" target="_blank" rel="noreferrer">Resume</a> */}
         </>);
 }
 

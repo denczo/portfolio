@@ -1,5 +1,5 @@
-import Project from "../elements/navigation/links/Project";
-import data from "../data/data"
+import Project from "../navigation/links/Project";
+import data from "../../data/data"
 
 function Projects() {
   return (<div id="Work" className="flex justify-center flex-col py-8 bg-gradient-to-r from-purple-600 to-blue-600 min-h-full">

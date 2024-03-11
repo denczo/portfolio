@@ -1,9 +1,10 @@
-import frutinator from "../assets/images/MobileView.webp";
-import portfolio from "../assets/images/PortfolioPage.webp";
-import jblaster from "../assets/images/JBlaster.webp";
-import pyblaster from "../assets/images/PyBlaster.webp";
-import frem from "../assets/images/KivyDesktop.webp";
-import arcreactor from "../assets/images/quarkreactor.webp";
+const frutinator = "/images/MobileView.webp";
+const portfolio = "/images/PortfolioPage.webp";
+const jblaster = "/images/JBlaster.webp";
+const pyblaster = "/images/PyBlaster.webp";
+const frem = "/images/KivyDesktop.webp";
+const arcreactor = "/images/quarkreactor.webp";
+// import Image from "next";
 // import raspibot from "../assets/images/RaspiBot.webp"
 
 const data = [
