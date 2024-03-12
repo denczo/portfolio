@@ -17,9 +17,9 @@ export function Client() {
     {/* <MobileMenu /> */}
     {/* <DesktopMenu /> */}
     <Hero />
-    <About />
+    <About /> 
+
     {/* <Projects />
-    <Work />
     <Contact />
     <Footer /> */}
   </div>
