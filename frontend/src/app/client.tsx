@@ -18,8 +18,8 @@ export function Client() {
     {/* <DesktopMenu /> */}
     <Hero />
     <About /> 
-
-    {/* <Projects />
+    <Projects />
+    {/*
     <Contact />
     <Footer /> */}
   </div>

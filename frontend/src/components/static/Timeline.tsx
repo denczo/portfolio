@@ -1,9 +1,10 @@
 import data from "../../data/dataWork"
 import Tag from "../static/Tag";
 
-
+// TODO: clean up code
 const Timeline = () => {
   return (<>
+
     {data.map((item, index) => <div key={"W" + index} className="flex max-w-3xl">
       <div>
         <div className="flex justify-center items-center text-white rounded-full desktop:w-16 mobile:mt-6 desktop:h-16 mobile:w-12 mobile:h-12 bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500">
