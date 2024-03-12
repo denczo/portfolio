@@ -2,11 +2,10 @@
  
 import React from 'react'
 import About from 'src/components/layout/About';
-import Contact from 'src/components/layout/Contact';
 import Footer from 'src/components/layout/Footer'
 import Hero from 'src/components/layout/Hero';
 import Projects from 'src/components/layout/Projects';
-import Work from 'src/components/layout/Work';
+import Services from 'src/components/layout/Services';
 import DesktopMenu from 'src/components/navigation/menu/DesktopMenu';
  
  
@@ -19,6 +18,8 @@ export function Client() {
     <Hero />
     <About /> 
     <Projects />
+    <Services />
+
     {/*
     <Contact />
     <Footer /> */}

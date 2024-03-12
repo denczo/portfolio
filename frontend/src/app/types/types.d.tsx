@@ -1,1 +1,5 @@
-declare module "*.pdf";
+export interface ServiceData {
+    hl: string;
+    desc: string;
+    img: string;
+  }
