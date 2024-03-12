@@ -11,19 +11,18 @@ module.exports = {
 
     },
     extend: {
+      colors: {
+        lightcyan: '#84ffff', // Define aqua color with hexadecimal value
+        gradientLeft: '#1e88e5',
+        gradientRight: '#8e24aa',
+      },
       animation: {
-        // typing: "typing 2s steps(14), blink 1.5s infinite"
-        typing: "typing 2s steps(14)",
         blinking: "blinking 10s linear infinite",
         scalepulse: "scalepulse 8s ease-in-out infinite",
         fadeIn: "fadeIn 5s"
-
       },
       keyframes: {
-        typing: {
-          from: { width: "0" },
-          to: { width: "14ch" }
-        },
+     
         fadeIn: {
           from: { opacity: 0},
           to: { opacity: 1}
@@ -40,6 +39,7 @@ module.exports = {
          '50%': { "scale": "1.15" },
          '100%': { "scale": "1" },
         }
+        
         
       },
       maxHeight: {

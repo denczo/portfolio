@@ -15,13 +15,13 @@ export function Client() {
     <div className="scroll-auto	h-screen overflow-y-auto">
     {/* <Burger /> */}
     {/* <MobileMenu /> */}
-    <DesktopMenu />
+    {/* <DesktopMenu /> */}
     <Hero />
     <About />
-    <Projects />
+    {/* <Projects />
     <Work />
     <Contact />
-    <Footer />
+    <Footer /> */}
   </div>
   )
 }

@@ -1,9 +1,12 @@
-import ProfilePic from "../../components/static/ProfilePic";
+import Image from 'next/image';
+import TransitionSVG from "../../../public/transitions/up.svg"
 
 const About = () => {
-    return (<div id="About" className="flex desktop:justify-center desktop:items-center flex-col bg-slate-800 text-slate-100 desktop:p-3.5 mobile:px-4 mobile:py-8 min-h-screen">
+    return (<div id="About" className="flex flex-col bg-slate-800 text-slate-100 min-h-screen">
+          {/* <TransitionSVG className="w-full"/> */}
+          <img className="-mt-1 h-44" src="/transitions/up.svg" alt="test" />
         {/* <p className="text-xl font-bold mb-8 text-center">ABOUT</p> */}
-        <div className="flex mobile:justify-center mobile:flex-col mobile:px-4 items-center desktopXL:flex-wrap">
+        {/* <div className="flex mobile:justify-center mobile:flex-col mobile:px-4 items-center desktopXL:flex-wrap">
             <article itemScope itemType="https://schema.org/author">
             <div className="desktop:mr-10 max-w-xl">
                 <p className="mb-5">I made my first steps with coding when I was doing training in game development. 
@@ -13,8 +16,7 @@ const About = () => {
                 <p className="mb-5">When I’m not at the computer, I usually go for a run &#127939;&#8205;&#9794;&#65039;, create my own tasty pizza &#127829;or explore places which are on my travel list &#128747;.</p>
             </div>
             </article>
-            <ProfilePic />
-        </div>
+        </div> */}
     </div>);
 }
 
