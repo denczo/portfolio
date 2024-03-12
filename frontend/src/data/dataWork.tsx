@@ -1,5 +1,13 @@
 const data = [
     {
+        title: "Fullstack Developer",
+        company: "Freelancing",
+        tasks: "Building modern web applications with API integration such as landingpages and dashboards",
+        tags: ["NextJS", "React", "Typescript", "REST", "GraphQL"],
+        image: "./ content / vivents.webp",
+        year: 2024
+    },
+    {
         title: "Creative Technologist",
         company: "Vivents Interactive",
         tasks: "Rebuilt a chat-system for an online plattform, enhancing the user experience and significantly increased the end user satisfaction",

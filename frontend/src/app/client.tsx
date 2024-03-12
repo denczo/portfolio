@@ -19,10 +19,7 @@ export function Client() {
     <About /> 
     <Projects />
     <Services />
-
-    {/*
-    <Contact />
-    <Footer /> */}
+    <Footer /> 
   </div>
   )
 }

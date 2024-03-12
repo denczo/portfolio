@@ -11,7 +11,7 @@ const Services = () => {
               <Service hl="API Integration" desc="Seamless integration for dynamic content delivery" img="/icons/API_Icon.svg"/>
               <Service hl="SEO Optimization" desc="Enhancing website visibility and rankings" img="/icons/SEO_Icon.svg"/>
             </div>
-
+            
               {/* <p className="desktop:text-[72px] mobile:text-[40px] font-bold ">Get in Touch</p> */}
               {/* <p className="desktop:text-[30px] text-center mobile:text-[20px] max-w-2xl px-4">Any questions, suggestions or business related inquiries, I’d love to hear from you!</p> */}
               {/* <MailTo label="✉️ d.czogalla@outlook.com" mailto="mailto:no-reply@example.com"/> */}
