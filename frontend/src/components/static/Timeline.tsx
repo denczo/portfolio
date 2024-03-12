@@ -3,7 +3,7 @@ import Tag from "../static/Tag";
 
 // TODO: clean up code
 const Timeline = () => {
-  return (<>
+  return (<div className="desktop:text-xl">
 
     {data.map((item, index) => <div key={"W" + index} className="flex max-w-3xl">
       <div>
@@ -23,7 +23,7 @@ const Timeline = () => {
         </ul>
       </div>
     </div>)}
-  </>);
+  </div>);
 }
 
 export default Timeline;
