@@ -13,10 +13,17 @@ function Hero() {
           <Typing />
         </p>
       </div>
-      <div className="flex flex-col desktop:w-2/5 mobile:w-full">
+      <motion.div className="flex flex-col desktop:w-2/5 mobile:w-full"
+           initial={{ opacity: 0, scale: 0.5 }}
+           animate={{ opacity: 1, scale: 1 }}
+           transition={{
+             duration: 0.8,
+             delay: 0.25,
+             ease: [0, 0.71, 0.2, 1.01]
+           }}>
         <img className="h-full object-contain" src="/images/portraitBrush.png" alt="Portrait" />
         <SocialMedia size={50}/>
-      </div>
+      </motion.div>
     </div>
     <div className="flex justify-center items-center z-10">
       <Link href={"/#About"} aria-label='About' >
