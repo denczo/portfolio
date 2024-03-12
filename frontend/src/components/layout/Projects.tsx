@@ -1,7 +1,7 @@
 import Project from "../navigation/links/Project";
 import data from "../../data/data"
 
-function Projects() {
+const Projects = () => {
   return (<div id="Work" className="flex flex-col bg-gradient-to-r from-gradientRight to-gradientLeft">
     <img className="w-full h-44" src="/transitions/transition_grey.svg" alt="transition" />
     <p className="flex text-4xl mb-8 mt-8 justify-center text-white">Featured Projects</p>
