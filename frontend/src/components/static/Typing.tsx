@@ -18,7 +18,7 @@ const Typing = () => {
       wrapper="span"
       speed={10}
       preRenderFirstString={true}
-      style={{ marginLeft: '5px', fontSize: '1em', color: "#84ffff", fontWeight: 'bold', display: 'inline-block' }}
+      style={{ marginLeft: '5px', fontSize: '1em', color: "#84ffff", fontWeight: 'bold', display: 'inline-block', width: '100%'}}
       repeat={1}
     />
   );

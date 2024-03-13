@@ -1,7 +1,7 @@
 
 const Summary = () => {
     return (<>
-        <p className="text-4xl mb-8 font-bold">About me</p>
+        <p className="text-4xl mb-8">About me</p>
         {/* <div className="flex mobile:justify-center mobile:flex-col mobile:px-4 desktopXL:flex-wrap"> */}
         <article className="desktop:text-xl mobile:text-sm" itemScope itemType="https://schema.org/author">
             {/* <div className="desktop:mr-10 max-w-xl"> */}

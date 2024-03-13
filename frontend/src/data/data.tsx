@@ -1,6 +1,6 @@
 const frutinator = "/images/MobileView.webp";
 const portfolio = "/images/PortfolioPage.webp";
-const jblaster = "/images/Monomind.jpg";
+const jblaster = "/images/Monomind.webp";
 const pyblaster = "/images/PyBlaster.webp";
 const frem = "/images/KivyDesktop.webp";
 const arcreactor = "/images/quarkreactor.webp";

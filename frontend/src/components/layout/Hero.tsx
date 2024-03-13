@@ -13,7 +13,7 @@ function Hero() {
     <div className="flex desktop:flex-row mobile:flex-col-reverse w-full desktop:h-full">
       <div className="flex flex-col justify-center z-20 pointer-events-none text-white desktop:w-3/5 mobile:w-full mobile:text-center">
       <motion.div initial="visible" animate="hidden" variants={variants}>
-        <p className="desktop:text-[100px] mobile:text-[50px] font-bold text-lightcyan">Greetings, I'm Dennis</p>
+        <p className="desktop:text-[100px] mobile:text-[50px] font-bold text-lightcyan w-full">Greetings, I'm Dennis</p>
         <p className="desktop:text-[60px] mobile:text-[26px]">a fullstack developer specializing in web applications with
           <Typing />
         </p>
@@ -27,7 +27,7 @@ function Hero() {
              delay: 0.25,
              ease: [0, 0.71, 0.2, 1.01]
            }}>
-        <img className="h-full object-contain" src="/images/portraitBrush.png" alt="Portrait" />
+        <img className="h-full object-contain" src="/images/portraitBrush.webp" alt="Portrait" />
         <div className='mobile:hidden'><SocialMedia size={50}/></div>
       </motion.div>
     </div>

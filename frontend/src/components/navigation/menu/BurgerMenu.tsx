@@ -1,15 +1,15 @@
 import SocialMedia from "src/components/static/SocialMedia";
-import useGlobalState from "src/hooks/useGlobalState";
 import Burger from "./elements/Burger";
 import Close from "./elements/Close";
 import Menu from "./elements/Menu";
+import { useGlobalState } from "src/contexts/GlobalStateContext";
 
 const BurgerMenu = () => {
 
-    const { isMenuOpen, toggleState } = useGlobalState();
+    const { isMenuOpen, toggleMenu } = useGlobalState();
 
     return (<div className="desktop:hidden">
-        <div className="fixed top-0 right-0 p-2 z-50" onClick={toggleState}>
+        <div className="fixed top-0 right-0 p-2 z-50" onClick={toggleMenu}>
             {isMenuOpen? <Close /> : <Burger />}
         </div>
         {isMenuOpen ?

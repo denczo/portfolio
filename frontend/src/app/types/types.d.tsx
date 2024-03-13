@@ -8,3 +8,8 @@ export interface ServiceData {
     x: number;
     y: number;
 }
+
+export interface GlobalState {
+  isMenuOpen: boolean;
+  toggleMenu: () => void;
+}

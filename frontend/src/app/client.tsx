@@ -8,9 +8,11 @@ import Projects from 'src/components/layout/Projects';
 import Services from 'src/components/layout/Services';
 import BurgerMenu from 'src/components/navigation/menu/BurgerMenu';
 import Navbar from 'src/components/navigation/menu/Navbar';
-  
+import { GlobalStateProvider } from '../contexts/GlobalStateContext';
+
 export function Client() {
-  return (<>
+  return (
+      <GlobalStateProvider>
     {/* // <div className="scroll-auto	h-screen overflow-y-auto"> */}
     <BurgerMenu />
     <Navbar />
@@ -20,8 +22,7 @@ export function Client() {
     <Services />
     <Footer /> 
   {/* // </div> */}
-  </>
-  )
+  </GlobalStateProvider>)
 }
 
 export default Client;
