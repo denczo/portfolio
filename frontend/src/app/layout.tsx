@@ -1,7 +1,7 @@
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
-    title: 'Pygineer.info | Dennis-Immanuel Czogalla - Software Developer',
+    title: 'FullstackLab.net | Dennis-Immanuel Czogalla - Fullstack Developer',
     description: "I'm a fullstack developer who builds high performance web applications for desktop and mobile devices.",
   }
 
