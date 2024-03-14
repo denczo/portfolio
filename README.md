@@ -1,17 +1,16 @@
 # Portfolio Website
 
-This is a one page portfolio website which highlights skills, work experience, projects and shares some personal information about the owner (Me👋) of the website.
+This is a responsive one page portfolio website which highlights skills, work experience, projects and shares some personal information about the owner (Me👋) of the website.
 
-
-![Desktop View](./frontend/src/assets/images/Home.webp?raw=true "Home")
-![Desktop View](./frontend/src/assets/images/About.webp?raw=true "About")
-![Desktop View](./frontend/src/assets/images/Work.webp?raw=true "Work")
-![Mobile View](./frontend/src/assets/images/Mobile.webp?raw=true "Experience")
+![Desktop View](./public/images/portfolio_p1.webp?raw=true "Hero")
+![Desktop View](./public/images/portfolio_p2.webp?raw=true "AboutMe")
+![Desktop View](./public/images/portfolio_p3.webp?raw=true "Projects")
+![Mobile View](./public/images/portfolio_p4.webp?raw=true "Services")
 
 ## Key features:
 
-- ReactJS, Typescript, Redux, Tailwind CSS, Framer Motion
-- Responsive Design, Burger Menu, SEO
+- NextJS, Typescript, Tailwind CSS, Framer Motion
+- Responsive Design, Burger Menu, Contact Form, SEO
 
 Check it out:
 https://denczo.github.io/portfolio/
