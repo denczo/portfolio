@@ -1,5 +1,5 @@
 'use client'
- 
+
 import React from 'react'
 import About from 'src/components/layout/About';
 import Footer from 'src/components/layout/Footer'
@@ -9,20 +9,20 @@ import Services from 'src/components/layout/Services';
 import BurgerMenu from 'src/components/navigation/menu/BurgerMenu';
 import Navbar from 'src/components/navigation/menu/Navbar';
 import { GlobalStateProvider } from '../contexts/GlobalStateContext';
+import Modal from 'src/components/layout/Modal';
 
 export function Client() {
   return (
-      <GlobalStateProvider>
-    {/* // <div className="scroll-auto	h-screen overflow-y-auto"> */}
-    <BurgerMenu />
-    <Navbar />
-    <Hero />
-    <About /> 
-    <Projects />
-    <Services />
-    <Footer /> 
-  {/* // </div> */}
-  </GlobalStateProvider>)
+    <GlobalStateProvider>
+      <Modal />
+      <BurgerMenu />
+      <Navbar />
+      <Hero />
+      <About />
+      <Projects />
+      <Services />
+      <Footer />
+    </GlobalStateProvider>)
 }
 
 export default Client;

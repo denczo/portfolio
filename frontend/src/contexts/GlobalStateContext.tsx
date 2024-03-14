@@ -4,7 +4,6 @@
 import React, { createContext, useState, useContext } from 'react';
 import { GlobalState } from '../app/types/types.d';
 
-
 const GlobalStateContext = createContext<GlobalState | undefined>(undefined);
 
 export const useGlobalState = (): GlobalState => {
@@ -17,14 +16,21 @@ export const useGlobalState = (): GlobalState => {
 
 export const GlobalStateProvider = ({ children }) => {
   const [isMenuOpen, setMenuOpen] = useState<boolean>(false);
+  const [isModalOpen, setModalOpen] = useState<boolean>(false);
 
   const toggleMenu = (): void => {
     setMenuOpen(prevState => !prevState);
   };
 
+  const toggleModal = (): void => {
+    setModalOpen(prevState => !prevState);
+  };
+
   const value: GlobalState = {
     isMenuOpen,
     toggleMenu,
+    isModalOpen,
+    toggleModal,
   };
 
   return (
