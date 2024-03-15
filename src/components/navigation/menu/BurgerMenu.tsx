@@ -1,8 +1,8 @@
-import SocialMedia from "src/components/static/SocialMedia";
+import SocialMedia from "../../../components/static/SocialMedia";
 import Burger from "./elements/Burger";
 import Close from "./elements/Close";
 import Menu from "./elements/Menu";
-import { useGlobalState } from "src/contexts/GlobalStateContext";
+import { useGlobalState } from "../../../contexts/GlobalStateContext";
 
 const BurgerMenu = () => {
 

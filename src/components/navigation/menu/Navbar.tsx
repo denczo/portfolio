@@ -1,4 +1,4 @@
-import useScrollPos from "src/hooks/useScrollPos";
+import useScrollPos from "../../../hooks/useScrollPos";
 import Menu from "./elements/Menu";
 
 const Navbar = () => {

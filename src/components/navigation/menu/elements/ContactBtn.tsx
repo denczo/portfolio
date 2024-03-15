@@ -1,4 +1,4 @@
-import { useGlobalState } from "src/contexts/GlobalStateContext";
+import { useGlobalState } from "../../../../contexts/GlobalStateContext";
 
 const ContactBtn = ({title}:{title:string}) => {
     

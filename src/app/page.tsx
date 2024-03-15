@@ -1,5 +1,5 @@
 import { GlobalStateProvider } from '../contexts/GlobalStateContext'
-import './global.scss'
+import './globals.css'
 import dynamic from 'next/dynamic'
  
 const App = dynamic(() => import('./client'), { ssr: false })

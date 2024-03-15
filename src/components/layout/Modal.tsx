@@ -1,4 +1,4 @@
-import { useGlobalState } from "src/contexts/GlobalStateContext";
+import { useGlobalState } from "../../contexts/GlobalStateContext";
 import Contact from "../static/Contact";
 import Close from "../navigation/menu/elements/Close";
 
