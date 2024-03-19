@@ -13,7 +13,7 @@ import Modal from '../components/layout/Modal';
 
 export function Client() {
   return (
-    <GlobalStateProvider>
+    <GlobalStateProvider >
       <Modal />
       <BurgerMenu />
       <Navbar />

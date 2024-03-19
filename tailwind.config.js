@@ -3,7 +3,7 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     screens: {
-      'mobile': {'max': '1024px'},
+      'mobile': {'max': '1023px'},
 
       // 'tablet': {'min': '640px'},
       
@@ -19,9 +19,23 @@ module.exports = {
       animation: {
         blinking: "blinking 10s linear infinite",
         scalepulse: "scalepulse 8s ease-in-out infinite",
-        fadeIn: "fadeIn 5s"
+        fadeIn: "fadeIn 5s",
+        moveFade: "moveFade 2s linear infinite"
       },
       keyframes: {
+        moveFade: {
+          '0%': { 
+            opacity: "0",
+            transform: "rotate(45deg) translate(-10px, -10px)",
+          },
+          '50%': { 
+            opacity: "1",
+          },
+          '100%': {    
+            opacity: "0",
+            transform: "rotate(45deg) translate(10px, 10px)",
+          },
+      },
      
         fadeIn: {
           from: { opacity: 0},
@@ -36,11 +50,9 @@ module.exports = {
         },
         scalepulse: {
           '0%': { "scale": "1" },
-         '50%': { "scale": "1.15" },
+         '50%': { "scale": "1.05" },
          '100%': { "scale": "1" },
         }
-        
-        
       },
       maxHeight: {
         'lg': '512px',

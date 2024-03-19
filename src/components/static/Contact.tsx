@@ -1,7 +1,7 @@
 const Contact = () => {
   return (
-    <section className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 desktop:w-1/3 mobile:w-3/4">
-      <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+    <section className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 desktop:w-1/3 mobile:w-full mobile:px-4 mobile:max-w-3xl">
+      <div className="px-2 mx-auto">
         <form action="https://formsubmit.co/45c9b05f4e46cacc0c6ca38c41d83f88" className="space-y-8" method="POST">
           <div>
             <label htmlFor="email" className="block mb-2 text-sm font-medium text-white dark:text-gray-300">Your email</label>

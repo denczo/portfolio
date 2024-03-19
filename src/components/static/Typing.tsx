@@ -7,18 +7,18 @@ const Typing = () => {
       sequence={[
         // Same substring at the start will only be typed out once, initially
         'Next.js',
-        1000, 
+        500, 
         'Typescript',
-        1000,
+        500,
         'Tailwind CSS',
-        1000,
+        500,
         'React.js',
-        1000
+        500
       ]}
       wrapper="span"
       speed={10}
       preRenderFirstString={true}
-      style={{ marginLeft: '5px', fontSize: '1em', color: "#84ffff", fontWeight: 'bold', display: 'inline-block', width: '100%'}}
+      style={{ marginLeft: '5px', fontSize: '1em', textAlign: 'left', color: "#84ffff", fontWeight: 'bold', display: 'inline-block', width: '38.5%'}}
       repeat={1}
     />
   );
