@@ -26,11 +26,16 @@ export const GlobalStateProvider = ({ children }: {children: any}) => {
     setModalOpen(prevState => !prevState);
   };
 
+  const exitMenu = (): void => {
+    setMenuOpen(false);
+  };
+
   const value: GlobalState = {
     isMenuOpen,
     toggleMenu,
     isModalOpen,
     toggleModal,
+    exitMenu,
   };
 
   return (

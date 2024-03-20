@@ -2,7 +2,7 @@ import { Metadata } from "next"
 
 export const metadata: Metadata = {
     title: 'FullstackLab.net | Dennis-Immanuel Czogalla - Fullstack Developer',
-    description: "I'm a fullstack developer who builds high performance web applications for desktop and mobile devices.",
+    description: "I'm a fullstack developer specialized in React.js, Next.js and Typescript who builds innovative web applications for desktop and mobile devices.",
   }
 
 export default function RootLayout({

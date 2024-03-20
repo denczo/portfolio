@@ -1,4 +1,4 @@
-import SocialMedia from "../../../components/static/SocialMedia";
+import SocialMedia from "../links/SocialMedia";
 import Burger from "./elements/Burger";
 import Close from "./elements/Close";
 import Menu from "./elements/Menu";
@@ -11,7 +11,7 @@ const BurgerMenu = () => {
         hidden: { opacity: 1, y: 0 },
         visible: { opacity: 0, y: -50 },
     }
-    const { isMenuOpen, toggleMenu } = useGlobalState();
+    const { isMenuOpen, toggleMenu, exitMenu } = useGlobalState();
 
     useEffect(() => {
         if (isMenuOpen) {
@@ -19,6 +19,12 @@ const BurgerMenu = () => {
         } else {
             document.body.classList.remove("overflow-y-hidden")
         }
+
+        window.addEventListener('resize', exitMenu);
+
+        return () => {
+          window.removeEventListener('resize', exitMenu);
+        };
     }, [isMenuOpen]);
 
     return (<div className="desktop:hidden">

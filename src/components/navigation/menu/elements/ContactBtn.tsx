@@ -3,7 +3,12 @@ import { useGlobalState } from "../../../../contexts/GlobalStateContext";
 
 const ContactBtn = ({title}:{title:string}) => {
     
-    const { isModalOpen, isMenuOpen, toggleModal } = useGlobalState();
+    const { isModalOpen, isMenuOpen, toggleModal, exitMenu } = useGlobalState();
+
+    const handleClick = () => {
+        exitMenu();
+        toggleModal();
+    }
 
     useEffect(() => {
         if (isMenuOpen || isModalOpen) {
@@ -13,9 +18,9 @@ const ContactBtn = ({title}:{title:string}) => {
         }
     }, [isMenuOpen, isModalOpen]);
     
-    return (<div className='flex items-center cursor-pointer'>
-        <a aria-label={title} className={"transition ease-in-out duration-300 text-center border-2 border-white rounded-3xl px-3 pb-1 hover:bg-white hover:text-black"} onClick={toggleModal} >{title}</a>
-        </div>
+    return (<button className='flex items-center cursor-pointer'>
+        <div aria-label={title} className={"transition ease-in-out duration-300 text-center border-2 border-white rounded-3xl px-3 pb-1 hover:bg-white hover:text-black"} onClick={handleClick} >{title}</div>
+        </button>
     );
 }
 

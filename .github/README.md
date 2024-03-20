@@ -13,4 +13,4 @@ This is a responsive one page portfolio website which highlights skills, work ex
 - Responsive Design, Burger Menu, Contact Form, SEO
 
 Check it out:
-https://denczo.github.io/portfolio/
+https://www.fullstacklab.net
