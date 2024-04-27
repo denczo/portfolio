@@ -6,8 +6,8 @@ import Arrow from '../static/Arrow';
 
 
 const variants = {
-  hidden: { opacity: 1, y: 0 },
-  visible: { opacity: 0, y: -50 },
+  hidden: { opacity: 1 },
+  visible: { opacity: 0 },
 }
 
 function Hero() {
@@ -23,10 +23,10 @@ function Hero() {
       </motion.div>
       </div>
       <motion.div className="flex flex-col desktop:w-2/5"
-           initial={{ opacity: 0, scale: 0.5 }}
+           initial={{ opacity: 0, scale: 0.75 }}
            animate={{ opacity: 1, scale: 1 }}
            transition={{
-             duration: 0.8,
+             duration: 1.5,
              delay: 0.25,
              ease: [0, 0.71, 0.2, 1.01]
            }}>

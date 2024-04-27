@@ -1,9 +1,12 @@
 import data from "../../data/dataWork"
+import BounceIn from "../animation/BounceIn";
 import Tag from "../static/Tag";
 
 // TODO: clean up code
 const Timeline = () => {
-  return (<div className="desktop:text-xl">
+  return (
+    <BounceIn delay={0.4}>
+    <div className="desktop:text-xl">
 
     {data.map((item, index) => <div key={"W" + index} className="flex">
       <div>
@@ -23,7 +26,7 @@ const Timeline = () => {
         </ul>
       </div>
     </div>)}
-  </div>);
+  </div></BounceIn>);
 }
 
 export default Timeline;

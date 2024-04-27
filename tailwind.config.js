@@ -3,11 +3,11 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     screens: {
-      'mobile': {'max': '1023px'},
+      'mobile': { 'max': '1023px' },
 
       // 'tablet': {'min': '640px'},
-      
-      'desktop': {'min': '1024px'},
+
+      'desktop': { 'min': '1024px' },
 
     },
     extend: {
@@ -20,38 +20,39 @@ module.exports = {
         blinking: "blinking 10s linear infinite",
         scalepulse: "scalepulse 8s ease-in-out infinite",
         fadeIn: "fadeIn 5s",
-        moveFade: "moveFade 2s linear infinite"
+        moveFade: "moveFade 2s linear infinite",
       },
       keyframes: {
+       
         moveFade: {
-          '0%': { 
+          '0%': {
             opacity: "0",
             transform: "rotate(45deg) translate(-10px, -10px)",
           },
-          '50%': { 
+          '50%': {
             opacity: "1",
           },
-          '100%': {    
+          '100%': {
             opacity: "0",
             transform: "rotate(45deg) translate(10px, 10px)",
           },
-      },
-     
+        },
+
         fadeIn: {
-          from: { opacity: 0},
-          to: { opacity: 1}
+          from: { opacity: 0 },
+          to: { opacity: 1 }
         },
         blink: {
           from: { "border-right-color": "transparent" },
           to: { "border-right-color": "black" },
         },
         blinking: {
-          to: { "background-position": "400%"}
+          to: { "background-position": "400%" }
         },
         scalepulse: {
           '0%': { "scale": "1" },
-         '50%': { "scale": "1.05" },
-         '100%': { "scale": "1" },
+          '50%': { "scale": "1.05" },
+          '100%': { "scale": "1" },
         }
       },
       maxHeight: {

@@ -10,6 +10,7 @@ import BurgerMenu from '../components/navigation/menu/BurgerMenu';
 import Navbar from '../components/navigation/menu/Navbar';
 import { GlobalStateProvider } from '../contexts/GlobalStateContext';
 import Modal from '../components/layout/Modal';
+import AnimationOnScroll from 'src/components/animation/AnimatedOnScroll';
 
 export function Client() {
   return (
@@ -18,9 +19,14 @@ export function Client() {
       <BurgerMenu />
       <Navbar />
       <Hero />
-      <About />
+      <AnimationOnScroll>
+        <Services />
+      </AnimationOnScroll>
       <Projects />
-      <Services />
+      <AnimationOnScroll>
+      <About />
+      </AnimationOnScroll>
+
       <Footer />
     </GlobalStateProvider>)
 }
