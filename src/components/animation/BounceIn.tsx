@@ -6,7 +6,7 @@ import { Children, ReactNode } from "react";
 export default function BounceIn({children, delay}: {children: ReactNode, delay: number}){
 
     return (
-        <div className="flex justify-evenly flex-wrap gap-2 pb-4">
+        <div className="flex justify-evenly mobile:flex-wrap">
           {Children.map(children, (child, index) => (
             <BouncingBox key={index} delay={delay * index}>
               {child}

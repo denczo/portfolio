@@ -19,7 +19,7 @@ function Hero() {
         <p className="desktop:text-[3vw] mobile:text-[5vw]">a fullstack developer specializing in web applications with
           <Typing />
         </p>
-        <div className='flex mobile:hidden mt-6 justify-start w-[17vw]'><SocialMedia size={200}/></div>
+        <div className='flex mobile:hidden mt-6 justify-start'><SocialMedia size={35}/></div>
       </motion.div>
       </div>
       <motion.div className="flex flex-col desktop:w-2/5 aspect-square w-full justify-center"
