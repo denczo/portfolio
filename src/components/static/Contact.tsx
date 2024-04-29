@@ -1,5 +1,6 @@
 import { useForm } from "react-hook-form";
 import HCaptcha from '@hcaptcha/react-hcaptcha';
+import FadeIn from "../animation/FadeIn";
 
 export default function Contact() {
 
@@ -35,19 +36,21 @@ export default function Contact() {
             <label htmlFor="message" className="block my-2 text-sm font-medium text-white">Your message</label>
             <textarea id="message" name="message" rows={6} className="block p-2.5 w-full text-sm text-gray-800   bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500" placeholder="Leave a comment..."></textarea>
           </div>
-          <div className="py-4 desktop:hidden">
-            <HCaptcha
-              sitekey="50b2fe65-b00b-4b9e-ad62-3ba471098be2"
-              reCaptchaCompat={false}
-              size="compact"
-              onVerify={onHCaptchaChange} />
-          </div>
-          <div className="py-4 mobile:hidden">
-            <HCaptcha
-              sitekey="50b2fe65-b00b-4b9e-ad62-3ba471098be2"
-              reCaptchaCompat={false}
-              onVerify={onHCaptchaChange} />
-          </div>
+          <FadeIn delay={2}>
+            <div className="py-4 desktop:hidden">
+              <HCaptcha
+                sitekey="50b2fe65-b00b-4b9e-ad62-3ba471098be2"
+                reCaptchaCompat={false}
+                size="compact"
+                onVerify={onHCaptchaChange} />
+            </div>
+            <div className="py-4 mobile:hidden">
+              <HCaptcha
+                sitekey="50b2fe65-b00b-4b9e-ad62-3ba471098be2"
+                reCaptchaCompat={false}
+                onVerify={onHCaptchaChange} />
+            </div>
+          </FadeIn>
           <button type="submit" className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg border-white border-solid border-2 hover:bg-white hover:text-black transition-colors duration-300">Send message</button>
         </form>
       </div>
