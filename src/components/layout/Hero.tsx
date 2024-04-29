@@ -34,7 +34,7 @@ function Hero() {
       </motion.div>
     </div>
     <div className="desktop:absolute inset-0 flex items-end py-2 desktop:bottom-10 justify-center z-10">
-      <Link href={"/#About"} aria-label='About' >
+      <Link href={"/#Services"} aria-label='About' >
           <Arrow />
        </Link>
     </div>
