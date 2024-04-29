@@ -17,7 +17,7 @@ const Contact = () => {
             <textarea id="message" name="message" rows={6} className="block p-2.5 w-full text-sm text-gray-800   bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500" placeholder="Leave a comment..."></textarea>
           </div>
           <div className="h-captcha" data-captcha="true"></div>
-          <script src="https://web3forms.com/client/script.js" defer></script>
+          <script src="https://web3forms.com/client/script.js" async defer></script>
           <button type="submit" className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-gray-700 focus:outline-none scale-100 hover:scale-110 transition-transform">Send message</button>
         </form>
       </div>
