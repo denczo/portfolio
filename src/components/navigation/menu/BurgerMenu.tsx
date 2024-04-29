@@ -4,13 +4,12 @@ import Close from "./elements/Close";
 import Menu from "./elements/Menu";
 import { useGlobalState } from "../../../contexts/GlobalStateContext";
 import { useEffect } from "react";
-import { motion } from "framer-motion";
+import { AnimatePresence } from "framer-motion";
+import AnimatedBlurryBg from "src/components/animation/AnimatedBlurryBg";
 
 const BurgerMenu = () => {
-    const variants = {
-        hidden: { opacity: 1, y: 0 },
-        visible: { opacity: 0, y: -50 },
-    }
+  
+    
     const { isMenuOpen, toggleMenu, exitMenu } = useGlobalState();
 
     useEffect(() => {
@@ -23,20 +22,26 @@ const BurgerMenu = () => {
         window.addEventListener('resize', exitMenu);
 
         return () => {
-          window.removeEventListener('resize', exitMenu);
+            window.removeEventListener('resize', exitMenu);
         };
     }, [isMenuOpen]);
 
-    return (<div className="desktop:hidden">
-        <div className="fixed top-0 right-0 p-2 z-50" onClick={toggleMenu}>
-            {isMenuOpen ? <Close /> : <Burger />}
+    return (
+        <div className="desktop:hidden">
+            {!isMenuOpen && <div className="fixed top-0 right-0 p-2 z-50" onClick={toggleMenu}><Burger /></div>}
+            <AnimatePresence>
+                {isMenuOpen &&
+                <AnimatedBlurryBg isVisible={isMenuOpen}>
+                    <div className="fixed top-0 right-0 p-2 z-[101] mt-0 text-base" onClick={toggleMenu}><Close /></div>
+
+                    <div className="flex flex-col justify-evenly items-center h-full">
+                    <Menu />
+                    <SocialMedia size={42} />
+                    </div>
+                </AnimatedBlurryBg>}
+            </AnimatePresence>
         </div>
-        {isMenuOpen ?
-            <motion.div initial="visible" animate="hidden" variants={variants} className="flex justify-between pt-20 fixed flex-col text-white text-4xl pl-5 bg-black backdrop-blur-md bg-opacity-40 w-full h-full z-40">
-                <Menu />
-                <SocialMedia size={42} />
-            </motion.div> : <></>}
-    </div>);
+    );
 }
 
 export default BurgerMenu;

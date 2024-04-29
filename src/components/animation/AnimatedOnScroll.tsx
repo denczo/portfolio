@@ -6,21 +6,20 @@ import { useInView } from 'react-intersection-observer';
 export default function AnimatedOnScroll({children}:{children: ReactNode}) {
   const [isVisible, setIsVisible] = useState(false);
   const { ref, inView } = useInView({
-    threshold: 0.1, // Trigger animation when 50% of the element is visible
+    threshold: 1, // Trigger animation when 100% of the element is visible
   });
 
-  // Update state when the element becomes visible
   useEffect(() => {
     if (inView) {
+      console.log("DAFUQ")
       setIsVisible(true);
+    }else{
+      // setIsVisible(false);
     }
   }, [inView]);
 
-  return (
-    <div ref={ref}>
-      {isVisible && (
-          <>{children}</>
-      )}
-    </div>
+  return (<div className='h-full bg-gray-600' ref={ref}>
+       {isVisible && (<>{children}</>)} 
+    </div> 
   );
 }
