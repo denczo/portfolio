@@ -22,7 +22,7 @@ function Hero() {
         <div className='flex mobile:hidden mt-6 justify-start w-[17vw]'><SocialMedia size={200}/></div>
       </motion.div>
       </div>
-      <motion.div className="flex flex-col desktop:w-2/5"
+      <motion.div className="flex flex-col desktop:w-2/5 aspect-square w-full justify-center"
            initial={{ opacity: 0, scale: 0.75 }}
            animate={{ opacity: 1, scale: 1 }}
            transition={{

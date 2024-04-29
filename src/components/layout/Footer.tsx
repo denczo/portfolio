@@ -7,8 +7,8 @@ function Footer() {
 
     <div className="flex desktop:justify-center mobile:justify-center mobile:flex-wrap w-full text-white pt-8">      
     <div className="flex flex-col text-3xl desktop:w-1/3 mobile:w-full mobile:justify-center mobile:mb-8 self-center text-center ">
-      <span className="text-3xl font-bold">Fullstacklab.net</span>
-      <span className="text-lg ">Where Ideas Meet Execution</span>
+      <span className="text-3xl font-bold px-2">Fullstacklab.net</span>
+      <span className="text-lg">Where Ideas Meet Execution</span>
     </div>
     {/* <div className="flex desktop:w-1/3 mobile:w-full justify-evenly flex-wrap ">
     <LinkCollection hl="Links" links={['Home', 'About', 'Projects', 'Contact', 'Imprint']}/>
