@@ -4,6 +4,7 @@
   "private": false,
   "homepage": "https://denczo.github.io/",
   "dependencies": {
+    "@hcaptcha/react-hcaptcha": "^1.10.1",
     "@reduxjs/toolkit": "^1.9.5",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -17,7 +18,7 @@
     "postcss": "^8.4.35",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-hook-form": "^7.51.0",
+    "react-hook-form": "^7.51.3",
     "react-intersection-observer": "^9.8.2",
     "react-redux": "^8.1.1",
     "react-type-animation": "^3.2.0",
