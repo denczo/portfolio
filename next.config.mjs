@@ -4,7 +4,9 @@ const nextConfig = {
     distDir: 'build', // Changes the build output directory to `./dist/`.
     images: {
       unoptimized: true,
-    }
+    },
+    reactStrictMode: false
+
   }
    
   export default nextConfig
