@@ -16,7 +16,7 @@ export default function Contact() {
             <label htmlFor="message" className="block my-2 text-sm font-medium text-white">Your message</label>
             <textarea id="message" name="message" rows={6} className="block p-2.5 w-full text-sm text-gray-800   bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500" placeholder="Leave a comment..."></textarea>
           </div>
-          <button type="submit" className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg border-white border-solid border-2 hover:bg-white hover:text-black transition-colors duration-300">Send message</button>
+          <button type="submit" className="py-3 mt-4 px-5 text-sm font-medium text-center text-white rounded-lg border-white border-solid border-2 hover:bg-white hover:text-black transition-colors duration-300">Send message</button>
         </form>
       </div>
     </section>
