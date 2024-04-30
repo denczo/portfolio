@@ -3,7 +3,7 @@ export default function Contact() {
   return (
     <section className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 desktop:w-1/3 mobile:w-full mobile:px-4 mobile:max-w-3xl">
       <div className="px-2 mx-auto">
-        <form action="https://formsubmit.co/d.czogalla@outlook.com" method="POST">
+        <form data-netlify="true" name="contact" method="POST">
           <div>
             <label htmlFor="email" className="block mb-2 text-sm font-medium text-white ">Your email</label>
             <input type="email" id="email" name="email" required className="shadow-sm bg-gray-50 border border-gray-300 text-gray-800 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5" placeholder="your@mail.com" />
