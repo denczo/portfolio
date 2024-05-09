@@ -13,7 +13,7 @@ const data = [
         tasks: "Engaged in a transformative journey through Australia, combining work opportunities with self-directed education, fostering personal and professional growth",
         tags: ["Next.js", "Typescript", "Tailwind CSS", "Jest", "Padi Open Water Diver"],
         image: "./ content / vivents.webp",
-        year: 2022
+        year: 2023
     },
     {
         title: "Frontend Developer",
