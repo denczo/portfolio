@@ -18,10 +18,9 @@ export function Client() {
       <BurgerMenu />
       <Navbar />
       <Hero />
-      <Services />
-      <Projects />
       <About />
-
+      <Projects />
+      <Services />
       <Footer />
     </GlobalStateProvider>)
 }
