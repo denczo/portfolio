@@ -7,11 +7,19 @@ const data = [
     //     image: "./ content / vivents.webp",
     //     year: 2024
     // },
+        {
+        title: "Work & Travel",
+        company: "Australia",
+        tasks: "Engaged in a transformative journey through Australia, combining work opportunities with self-directed education, fostering personal and professional growth",
+        tags: ["Next.js", "Typescript", "Tailwind CSS", "Jest", "Padi Open Water Diver"],
+        image: "./ content / vivents.webp",
+        year: 2022
+    },
     {
         title: "Frontend Developer",
         company: "Vivents Interactive",
         tasks: "Rebuilt a chat-system for an online plattform, enhancing the user experience and significantly increased the end user satisfaction",
-        tags: ["React", "Typescript", "Redux", "GraphQL", "Jest"],
+        tags: ["React.js", "Typescript", "Redux", "GraphQL", "Jest"],
         image: "./ content / vivents.webp",
         year: 2021
     },
