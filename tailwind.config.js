@@ -9,6 +9,7 @@ module.exports = {
 
       'desktop': { 'min': '1024px' },
 
+      'ultra': { 'min': '1440px'},
     },
     extend: {
       colors: {

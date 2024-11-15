@@ -1,19 +1,19 @@
 const data = [
-    // {
-    //     title: "Fullstack Developer",
-    //     company: "Freelancing",
-    //     tasks: "Building modern web applications with API integration such as landingpages and dashboards",
-    //     tags: ["NextJS", "React", "Typescript", "REST", "GraphQL"],
-    //     image: "./ content / vivents.webp",
-    //     year: 2024
-    // },
+    {
+        title: "Software Engineer",
+        company: "19bytes",
+        tasks: "Building a responsive dashboard for an AI-powered application for handling project proposals",
+        tags: ["React.js", "Typescript", "Vite/Vitest", "React Testing Library", "Material UI"],
+        image: "./ content / vivents.webp",
+        year: 2024
+    },
         {
         title: "Work & Travel",
         company: "Australia",
         tasks: "Engaged in a transformative journey through Australia, combining work opportunities with self-directed education, fostering personal and professional growth",
         tags: ["Next.js", "Typescript", "Tailwind CSS", "Jest", "Padi Open Water Diver"],
         image: "./ content / vivents.webp",
-        year: 2023
+        year: 2022
     },
     {
         title: "Frontend Developer",
@@ -26,13 +26,13 @@ const data = [
     {
         title: "Software Developer",
         company: "German Cancer Research Center",
-        tasks: "Built a Java-based web application that assists doctors and bioinformaticians in the planning of molecular therapies",
+        tasks: "Integrated APIs and databases for a medical application used by doctors and bioinformaticians to plan molecular therapies",
         tags: ["Java EE", "SQL", "REST", "JDBC"],
         image: "../assets/images/dkfz.webp",
         year: 2019
     },
     {
-        title: "Intern & Working Student",
+        title: "Intern & Student Assistant",
         company: "Edataconsulting",
         tasks: "Developed an AR application which has been used on fairs and exhibitions to promote and showcase the company interactively",
         tags: ["Unity", "C#", "Blender", "Microsoft Hololens"],

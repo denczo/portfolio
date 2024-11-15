@@ -19,7 +19,7 @@ const ContactBtn = ({title}:{title:string}) => {
     }, [isMenuOpen, isModalOpen]);
     
     return (<button className='flex items-center cursor-pointer'>
-        <a href="https://formsubmit.co/el/xuxeni"><div aria-label={title} className={"transition ease-in-out duration-300 text-center text-2xl border-2 border-white rounded-3xl px-3 pb-1 hover:bg-white hover:text-black"} onClick={undefined} >{title}</div></a>
+        <a href="https://formsubmit.co/el/gewusa"><div aria-label={title} className={"transition ease-in-out duration-300 text-center text-2xl border-2 border-white rounded-3xl px-3 pb-1 hover:bg-white hover:text-black"} onClick={undefined} >{title}</div></a>
         </button>
     );
 }
