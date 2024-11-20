@@ -1,6 +1,7 @@
 import nodemailer from 'nodemailer';
 import { NextResponse } from 'next/server';
 import { verify } from 'hcaptcha';
+import SMTPTransport from 'nodemailer/lib/smtp-transport';
 
 const secret = process.env.NEXT_PUBLIC_HCAPTCHA_SECRET!;
 
@@ -12,12 +13,12 @@ const transporter = nodemailer.createTransport({
         user: process.env.NEXT_PUBLIC_USER, // Your domain's email account
         pass: process.env.NEXT_PUBLIC_PWD, // The password for your domain's email account
     },
-});
+} as SMTPTransport.Options);
 
 export async function POST(req: Request) {
     const body = await req.json()
     const { formData, token } = body;
-    const { name, email, message} = formData
+    const { name, email, message } = formData
 
     transporter.verify(function (error) {
         if (error) {
@@ -30,7 +31,7 @@ export async function POST(req: Request) {
     try {
         const result = await verify(secret, token)
         if (!result.success) {
-            return NextResponse.json({ message: 'Invalid captcha!'}, { status: 500 });
+            return NextResponse.json({ message: 'Invalid captcha!' }, { status: 500 });
         }
         await transporter.sendMail({
             // This email needs to be owned
@@ -40,7 +41,7 @@ export async function POST(req: Request) {
             text: `Message from ${name} (${email}):\n\n${message}`,
             replyTo: email
         });
-        
+
         return NextResponse.json({ message: 'Message sent successfully!' }, { status: 200 });
     } catch (error) {
         console.error(error);
