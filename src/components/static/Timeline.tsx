@@ -3,7 +3,7 @@ import BounceIn from "../animation/BounceIn";
 import Tag from "../static/Tag";
 
 // TODO: clean up code
-const Timeline = () => {
+export default function Timeline(){
   return (
     <BounceIn delay={0.4}>
     <div className="desktop:text-xl">
@@ -28,5 +28,3 @@ const Timeline = () => {
     </div>)}
   </div></BounceIn>);
 }
-
-export default Timeline;

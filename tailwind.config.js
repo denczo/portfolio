@@ -20,7 +20,7 @@ module.exports = {
       animation: {
         blinking: "blinking 10s linear infinite",
         scalepulse: "scalepulse 8s ease-in-out infinite",
-        fadeIn: "fadeIn 5s",
+        fadeIn: "fadeIn 3s",
         moveFade: "moveFade 2s linear infinite",
       },
       keyframes: {

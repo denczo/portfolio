@@ -11,7 +11,6 @@ const Services = () => {
           <Service hl="API Integration" desc="Seamless integration into your solution for dynamic content delivery" img="/icons/API_Icon.svg" />
           <Service hl="SEO Optimization" desc="Enhancing visibility and rankings of your web application" img="/icons/SEO_Icon.svg" />
     </div>     
-    {/* <a className="text-4xl text-center">Technologies I use: </a> */}
     <p className="desktop:text-[40px] mobile:text-[24px] font-bold my-4 text-center">You have a project? Get in Touch</p>
     <ContactBtn title={"Contact Me"}/>
   </div>);
