@@ -65,7 +65,7 @@ export default function Contact() {
           </div>
           <div className="pt-4 animate-fadeIn h-24 ">
           <HCaptcha
-            sitekey={`${process.env.NEXT_PUBLIC_HCAPTCHA_SITEKEY}`}
+            sitekey={process.env.NEXT_PUBLIC_HCAPTCHA_SITEKEY || ""}
             onLoad={() => onLoad}
             onVerify={(token) => setToken(token)}
             onExpire={() => setToken(null)}
