@@ -11,7 +11,6 @@ export default function AnimatedOnScroll({children}:{children: ReactNode}) {
 
   useEffect(() => {
     if (inView) {
-      console.log("DAFUQ")
       setIsVisible(true);
     }else{
       // setIsVisible(false);
