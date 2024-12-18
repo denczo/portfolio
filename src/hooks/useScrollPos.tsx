@@ -5,7 +5,10 @@ const UseScrollFade = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsAtTop(window.scrollY <= 200);
+      const atTop = window.scrollY <= 200;
+      if (atTop !== isAtTop) {
+        setIsAtTop(atTop);
+      }
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -13,7 +16,7 @@ const UseScrollFade = () => {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []);
+  }, [isAtTop]);
 
   return isAtTop;
 };

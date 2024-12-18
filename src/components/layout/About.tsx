@@ -1,7 +1,7 @@
 import Summary from "../static/Summary";
 import Timeline from "../static/Timeline";
 
-const About = () => {
+export default function About() {
     return (<div id="About" className="flex flex-col bg-slate-800">
         <img className="w-full h-44" src="/transitions/transition_gradient.svg" alt="transition" />
         <div className="flex flex-grow justify-center items-center text-slate-100">
@@ -16,5 +16,3 @@ const About = () => {
         </div>
     </div>);
 }
-
-export default About;

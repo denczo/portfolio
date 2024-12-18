@@ -1,4 +1,4 @@
-export default function LinkCollection({ hl, links } : { hl: string, links: string[]}){
+export default function LinkCollection({ hl, links }: { hl: string, links: string[] }) {
     return <div className="flex p-4 mobile:w-1/2 justify-center">
         <ul>
             <li className="text-xl font-bold">{hl}</li>

@@ -1,0 +1,37 @@
+[
+    {
+      "title": "Software Engineer",
+      "company": "19bytes",
+      "tasks": "Building a responsive dashboard for an AI-powered application for handling project proposals",
+      "tags": ["React.js", "Typescript", "Vite/Vitest", "React Testing Library", "Material UI"],
+      "year": 2024
+    },
+    {
+      "title": "Work & Travel",
+      "company": "Australia",
+      "tasks": "Engaged in a transformative journey through Australia, combining work opportunities with self-directed education, fostering personal and professional growth",
+      "tags": ["Next.js", "Typescript", "Tailwind CSS", "Jest", "Padi Open Water Diver"],
+      "year": 2022
+    },
+    {
+      "title": "Frontend Developer",
+      "company": "Vivents Interactive",
+      "tasks": "Rebuilt a chat-system for an online plattform, enhancing the user experience and significantly increased the end user satisfaction",
+      "tags": ["React.js", "Typescript", "Redux", "GraphQL", "Jest"],
+      "year": 2021
+    },
+    {
+      "title": "Software Developer",
+      "company": "German Cancer Research Center",
+      "tasks": "Integrated APIs and databases for a medical application used by doctors and bioinformaticians to plan molecular therapies",
+      "tags": ["Java EE", "SQL", "REST", "JDBC"],
+      "year": 2019
+    },
+    {
+      "title": "Intern & Student Assistant",
+      "company": "Edataconsulting",
+      "tasks": "Developed an AR application which has been used on fairs and exhibitions to promote and showcase the company interactively",
+      "tags": ["Unity", "C#", "Blender", "Microsoft Hololens"],
+      "year": 2017
+    }
+]  
