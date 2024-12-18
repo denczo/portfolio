@@ -17,3 +17,12 @@ export interface GlobalState {
   exitMenu: () => void;
   exitModal: () => void;
 }
+
+export interface Repos{
+  name: string
+  desc: string,
+  topics: string[],
+  forks: number,
+  stargazers_count: number,
+  image: string
+}

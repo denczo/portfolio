@@ -1,21 +1,23 @@
 import { useState, useEffect } from 'react';
 
-const UseScrollFade = () => {
-  const [isAtTop, setIsAtTop] = useState(true);
+const UseScrollPos = () => {
+    const [isAtTop, setIsAtTop] = useState(true);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsAtTop(window.scrollY <= 200);
-    };
+    useEffect(() => {
+        const handleScroll = () => {
+            const atTop = window.scrollY <= 200
+            if(atTop !== isAtTop){
+                setIsAtTop(window.scrollY <= 200);
+            }
+        };
 
-    window.addEventListener('scroll', handleScroll);
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, [isAtTop]);
 
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
-  return isAtTop;
+    return isAtTop;
 };
 
-export default UseScrollFade;
+export default UseScrollPos;

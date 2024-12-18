@@ -8,8 +8,6 @@ import { AnimatePresence } from "framer-motion";
 import AnimatedBlurryBg from "src/components/animation/AnimatedBlurryBg";
 
 const BurgerMenu = () => {
-  
-    
     const { isMenuOpen, toggleMenu, exitMenu } = useGlobalState();
 
     useEffect(() => {
@@ -24,21 +22,20 @@ const BurgerMenu = () => {
         return () => {
             window.removeEventListener('resize', exitMenu);
         };
-    }, [isMenuOpen]);
+    }, [isMenuOpen, exitMenu]);
 
     return (
         <div className="desktop:hidden">
             {!isMenuOpen && <div className="fixed top-0 right-0 p-2 z-50" onClick={toggleMenu}><Burger /></div>}
             <AnimatePresence>
                 {isMenuOpen &&
-                <AnimatedBlurryBg isVisible={isMenuOpen}>
-                    <div className="fixed top-0 right-0 p-2 z-[101] mt-0 text-base" onClick={toggleMenu}><Close /></div>
-
-                    <div className="flex flex-col justify-evenly items-center h-full">
-                    <Menu />
-                    <SocialMedia size={42} />
-                    </div>
-                </AnimatedBlurryBg>}
+                    <AnimatedBlurryBg isVisible={isMenuOpen}>
+                        <div className="fixed top-0 right-0 p-2 z-[101] mt-0 text-base" onClick={toggleMenu}><Close /></div>
+                        <div className="flex flex-col justify-evenly items-center h-full">
+                            <Menu />
+                            <SocialMedia size={42} />
+                        </div>
+                    </AnimatedBlurryBg>}
             </AnimatePresence>
         </div>
     );

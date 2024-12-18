@@ -4,7 +4,6 @@ import Typing from '../static/Typing';
 import SocialMedia from '../navigation/links/SocialMedia';
 import Arrow from '../static/Arrow';
 
-
 const variants = {
   hidden: { opacity: 1 },
   visible: { opacity: 0 },

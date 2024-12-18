@@ -1,6 +1,22 @@
-# Portfolio Website
+# Nextfolio
 
-This is a responsive one page portfolio website which highlights skills, work experience, projects and shares some personal information about the owner (Me👋) of the website.
+Nextfolio is a responsive portfolio website which highlights skills, work experience, projects and shares some personal information about the owner (Me👋) of the website. The timeline as well as the project section are dynamically created. Nextfolio also includes a reliable secure contact form with hcaptcha verification which can be connected to user's personal email.
+
+## Key features:
+
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=next,typescript,tailwind,nodejs" />
+  </a>
+</p>
+
+- Built with Next.js, Typescript, Node.js, Tailwind CSS, Framer Motion
+- Dynamically created timeline for work experiences with Tags for skills
+- Dynamically created project cards which can be linked to the actual project
+- Secure contact form with hcaptcha using the API routes of Next.js
+- Responsive Design, Burger Menu, SEO
+
+## Screenshots:
 
 <p align="center">
     <img src="../public/images/portfolio_p1.webp" alt="Hero" width="400">
@@ -15,18 +31,6 @@ This is a responsive one page portfolio website which highlights skills, work ex
     <img src="../public/images/portfolio_mp2.webp" alt="Menu Mobile" width="200">
     <img src="../public/images/portfolio_mp3.webp" alt="Contact Mobile" width="200">
 </p>
-
-## Key features:
-
-<p align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=next,typescript,tailwind,nodejs" />
-  </a>
-</p>
-
-- Built with Next.js, Typescript, Node.js, Tailwind CSS, Framer Motion
-- Secure contact Form with hcaptcha using the API routes of Next.js
-- Responsive Design, Burger Menu, SEO
 
 ## Setup contact form:
 - To use hcaptcha you will need to create a free account:

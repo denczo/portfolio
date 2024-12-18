@@ -39,14 +39,6 @@ const data = [
         image: "../assets/images/edata.webp",
         year: 2017
     },
-    // {
-    //     title: "Intern",
-    //     company: "Acteno Energy",
-    //     tasks: "Improved data visualisation of the company's internal software which monitors power consumption of their clients",
-    //     tags: ["ASP.Net", "C#", "HTML", "CSS"],
-    //     image: "../assets/images/acteno.webp",
-    //     year: 2013
-    // },
 ]
 
 export default data;
