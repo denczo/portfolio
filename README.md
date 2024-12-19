@@ -3,17 +3,17 @@
 This is a responsive one page portfolio website which highlights skills, work experience, projects and shares some personal information about the owner (Me👋) of the website.
 
 <p align="center">
-    <img src="../public/images/portfolio_p1.webp" alt="Hero" width="400">
-    <img src="../public/images/portfolio_p2.webp" alt="AboutMe" width="400">
+    <img src="public/images/portfolio_p1.webp" alt="Hero" width="400">
+    <img src="public/images/portfolio_p2.webp" alt="AboutMe" width="400">
 </p>
 <p align="center">
-    <img src="../public/images/portfolio_p3.webp" alt="Projects" width="400">
-    <img src="../public/images/portfolio_p4.webp" alt="Services" width="400">
+    <img src="public/images/portfolio_p3.webp" alt="Projects" width="400">
+    <img src="public/images/portfolio_p4.webp" alt="Services" width="400">
 </p>
 <p align="center">
-    <img src="../public/images/portfolio_mp1.webp" alt="Hero Mobile" width="200">
-    <img src="../public/images/portfolio_mp2.webp" alt="Menu Mobile" width="200">
-    <img src="../public/images/portfolio_mp3.webp" alt="Contact Mobile" width="200">
+    <img src="public/images/portfolio_mp1.webp" alt="Hero Mobile" width="200">
+    <img src="public/images/portfolio_mp2.webp" alt="Menu Mobile" width="200">
+    <img src="public/images/portfolio_mp3.webp" alt="Contact Mobile" width="200">
 </p>
 
 ## Key features:
