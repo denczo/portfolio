@@ -1,5 +1,5 @@
-import ContactBtn from "../navigation/menu/elements/ContactBtn";
-import Service from "../static/Service";
+import ContactBtn from "../ui/navigation/menu/elements/ContactBtn";
+import Service from "../ui/content/Service";
 
 export default function Services() {
   return (<div id="Services" className="flex h-fit text-white flex-col items-center bg-slate-800">

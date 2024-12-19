@@ -1,4 +1,4 @@
-import SocialMedia from "../navigation/links/SocialMedia";
+import SocialMedia from "../ui/navigation/links/SocialMedia";
 
 export default function Footer() {
   return (<footer className="flex flex-col items-center bg-gradient-to-r from-gradientRight to-gradientLeft">

@@ -1,5 +1,5 @@
-import useScrollPos from "../../../hooks/useScrollPos";
-import Menu from "./elements/Menu";
+import useScrollPos from "../../../../../hooks/useScrollPos";
+import Menu from "../elements/Menu";
 
 export default function Navbar() {
     const isAtTop = useScrollPos();

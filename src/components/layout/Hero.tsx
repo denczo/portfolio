@@ -1,8 +1,8 @@
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import Typing from '../static/Typing';
-import SocialMedia from '../navigation/links/SocialMedia';
-import Arrow from '../static/Arrow';
+import Typing from '../animation/Typing';
+import SocialMedia from '../ui/navigation/links/SocialMedia';
+import Arrow from '../ui/navigation/links/Arrow';
 
 const variants = {
   hidden: { opacity: 1 },
@@ -33,9 +33,7 @@ export default function Hero() {
       </motion.div>
     </div>
     <div className="desktop:absolute inset-0 flex items-end py-2 desktop:bottom-10 justify-center z-10">
-      <Link href={"/#Services"} aria-label='About' >
-        <Arrow />
-      </Link>
+    <Arrow route={"/#Services"}/>
     </div>
   </div>);
 }

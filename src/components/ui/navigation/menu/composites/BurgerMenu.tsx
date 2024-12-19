@@ -1,8 +1,8 @@
-import SocialMedia from "../links/SocialMedia";
-import Burger from "./elements/Burger";
-import Close from "./elements/Close";
-import Menu from "./elements/Menu";
-import { useGlobalState } from "../../../contexts/GlobalStateContext";
+import SocialMedia from "../../links/SocialMedia";
+import Burger from "../elements/Burger";
+import Close from "../elements/Close";
+import Menu from "../elements/Menu";
+import { useGlobalState } from "../../../../../contexts/GlobalStateContext";
 import { useEffect } from "react";
 import { AnimatePresence } from "framer-motion";
 import AnimatedBlurryBg from "src/components/animation/AnimatedBlurryBg";

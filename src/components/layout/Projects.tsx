@@ -1,4 +1,4 @@
-import Project from "../navigation/links/Project";
+import Project from "../ui/navigation/links/Project";
 import projects from 'public/data/projects.json';
 
 export default function Projects() {

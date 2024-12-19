@@ -1,6 +1,6 @@
-import BounceIn from "../animation/BounceIn";
-import Tag from "../static/Tag";
+import BounceIn from "../../animation/BounceIn";
 import timelineData from 'public/data/timeline.json';
+import Tag from "./Tag";
 
 export default function Timeline() {
   return (

@@ -1,4 +1,4 @@
-import { useGlobalState } from "../../../../contexts/GlobalStateContext";
+import { useGlobalState } from "../../../../../contexts/GlobalStateContext";
 
 export default function MenuItem({ title }: { title: string }){
     const { isMenuOpen, toggleMenu } = useGlobalState()

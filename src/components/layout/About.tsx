@@ -1,5 +1,5 @@
-import Summary from "../static/Summary";
-import Timeline from "../static/Timeline";
+import Summary from "../ui/content/Summary";
+import Timeline from "../ui/content/Timeline";
 
 export default function About() {
     return (<div id="About" className="flex flex-col bg-slate-800">

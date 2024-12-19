@@ -4,11 +4,6 @@ export interface ServiceData {
   img: string;
 }
 
-export interface ScrollPosition {
-  x: number;
-  y: number;
-}
-
 export interface GlobalState {
   isModalOpen: boolean;
   toggleModal: () => void;

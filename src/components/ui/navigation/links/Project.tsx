@@ -1,4 +1,4 @@
-import Tag from "../../static/Tag";
+import Tag from "../../content/Tag";
 
 export default function Project({ headline, image, text, tags, link }: { headline: string, image: string, text: string, tags: string[], link: string }) {
     return (<a href={link} aria-label={text}>
