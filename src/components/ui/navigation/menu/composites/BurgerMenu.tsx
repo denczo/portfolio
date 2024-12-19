@@ -31,7 +31,6 @@ export default function BurgerMenu() {
                 {isMenuOpen &&
                     <AnimatedBlurryBg isVisible={isMenuOpen}>
                         <div className="fixed top-0 right-0 p-2 z-[101] mt-0 text-base" onClick={toggleMenu}><Close /></div>
-
                         <div className="flex flex-col justify-evenly items-center h-full">
                             <Menu />
                             <SocialMedia size={42} />

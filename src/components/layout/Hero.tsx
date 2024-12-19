@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import Link from 'next/link';
 import Typing from '../animation/Typing';
 import SocialMedia from '../ui/navigation/links/SocialMedia';
 import Arrow from '../ui/navigation/links/Arrow';

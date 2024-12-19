@@ -1,9 +1,8 @@
-import { GlobalStateProvider } from '../contexts/GlobalStateContext'
-import './globals.css'
-import dynamic from 'next/dynamic'
+'use client'
 
-const App = dynamic(() => import('./client'), { ssr: false })
+import './globals.css'
+import Client from './client'
 
 export default function Page() {
-  return <GlobalStateProvider><App /></GlobalStateProvider>
+  return <Client />
 }

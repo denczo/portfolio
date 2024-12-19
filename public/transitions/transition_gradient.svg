@@ -1,1 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1440 320" transform="rotate(180)"><defs><linearGradient id="a" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#1e88e5"/><stop offset="100%" stop-color="#8e24aa"/></linearGradient><filter id="b" width="120" height="120"><feOffset in="SourceAlpha" dy="20"/><feGaussianBlur stdDeviation="8"/><feBlend in="SourceGraphic" in2="blurOut"/></filter></defs><path fill="url(#a)" filter="url(#b)" d="M0 288V96h51.4v96h51.5v-64h51.4V64h51.4V32h51.4v64H360v32h51.4v64h51.5v-64h51.4v64h51.4v-32h51.4v-32h51.5v32H720v96h51.4V64h51.5v64h51.4V0h51.4v128h51.4V64H1080v160h51.4V96h51.5V32h51.4v256h51.4V160h51.4V64h51.5v32h51.4v224H0z"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1440 320" transform="rotate(180)">
+    <defs>
+        <linearGradient id="a" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#1e88e5" />
+            <stop offset="100%" stop-color="#8e24aa" />
+        </linearGradient>
+        <filter id="b" width="120" height="120">
+            <feOffset in="SourceAlpha" dy="20" />
+            <feGaussianBlur stdDeviation="8" />
+            <feBlend in="SourceGraphic" in2="blurOut" />
+        </filter>
+    </defs>
+    <path fill="url(#a)" filter="url(#b)"
+        d="M0 288V96h51.4v96h51.5v-64h51.4V64h51.4V32h51.4v64H360v32h51.4v64h51.5v-64h51.4v64h51.4v-32h51.4v-32h51.5v32H720v96h51.4V64h51.5v64h51.4V0h51.4v128h51.4V64H1080v160h51.4V96h51.5V32h51.4v256h51.4V160h51.4V64h51.5v32h51.4v224H0z" />
+</svg>

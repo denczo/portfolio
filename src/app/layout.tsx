@@ -1,4 +1,5 @@
 import { Metadata } from "next"
+import { GlobalStateProvider } from "src/contexts/GlobalStateContext"
 
 export const metadata: Metadata = {
     title: 'FullstackLab.net | Dennis-Immanuel Czogalla - Fullstack Developer',
@@ -13,7 +14,9 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body>
-                <div id="root">{children}</div>
+                <GlobalStateProvider >
+                    <div id="root">{children}</div>
+                </GlobalStateProvider>
             </body>
         </html>
     )

@@ -6,6 +6,7 @@ const UseScrollFade = () => {
   useEffect(() => {
     const handleScroll = () => {
       const atTop = window.scrollY <= 200;
+      // Only set it, when top has not been reached yet
       if (atTop !== isAtTop) {
         setIsAtTop(atTop);
       }

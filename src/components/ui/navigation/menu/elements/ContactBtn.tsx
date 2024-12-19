@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useGlobalState } from "../../../../../contexts/GlobalStateContext";
+import { useGlobalState } from "src/contexts/GlobalStateContext";
 
 export default function ContactBtn({ title }: { title: string }){
 

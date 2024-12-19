@@ -1,6 +1,6 @@
-import { useGlobalState } from "../../../../../contexts/GlobalStateContext";
+import { useGlobalState } from "src/contexts/GlobalStateContext";
 
-export default function MenuItem({ title }: { title: string }){
+export default function MenuItem({ title }: { title: string }) {
     const { isMenuOpen, toggleMenu } = useGlobalState()
 
     return (<div className='flex items-center'>

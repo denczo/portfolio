@@ -8,10 +8,13 @@ const secret = process.env.NEXT_PUBLIC_HCAPTCHA_SECRET!;
 const transporter = nodemailer.createTransport({
     host: process.env.NEXT_PUBLIC_SMTP_SERVER,
     port: process.env.NEXT_PUBLIC_SMTP_PORT,
-    secure: true, // SSL
+    // SSL
+    secure: true,
     auth: {
-        user: process.env.NEXT_PUBLIC_USER, // Your domain's email account
-        pass: process.env.NEXT_PUBLIC_PWD, // The password for your domain's email account
+        // Your domain's email account
+        user: process.env.NEXT_PUBLIC_USER,
+        // The password for your domain's email account
+        pass: process.env.NEXT_PUBLIC_PWD, 
     },
 } as SMTPTransport.Options);
 
@@ -20,6 +23,7 @@ export async function POST(req: Request) {
     const { formData, token } = body;
     const { name, email, message } = formData
 
+    // Verifies connection to SMTP server
     transporter.verify(function (error) {
         if (error) {
             console.log(error);
@@ -29,6 +33,7 @@ export async function POST(req: Request) {
     });
 
     try {
+        // verifies captcha
         const result = await verify(secret, token)
         if (!result.success) {
             return NextResponse.json({ message: 'Invalid captcha!' }, { status: 500 });
@@ -50,6 +55,7 @@ export async function POST(req: Request) {
 
 export async function GET() {
     try {
+        // Verifies connection to SMTP server
         await transporter.verify();
         return NextResponse.json({ message: "Connection to SMTP server succesful!" }, { status: 200 })
     }
