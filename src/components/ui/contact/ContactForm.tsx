@@ -30,7 +30,7 @@ export default function ContactForm() {
         {success ? <div className="text-xl flex justify-center items-center h-16">{<span className="animate-fadeIn">{"Message sent!"}</span>}</div> :
           <form name="contact" onSubmit={handleSubmit}>
             <div>
-              <label htmlFor="email" className="block mb-2 text-sm font-medium text-white ">Your email</label>
+              <label htmlFor="email" className="block mb-2 text-sm font-medium text-white ">Email</label>
               <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} required className="shadow-sm bg-gray-50 border border-gray-300 text-gray-800 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5" placeholder="your@mail.com" />
             </div>
             <div>
@@ -38,8 +38,8 @@ export default function ContactForm() {
               <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} required className="block p-3 w-full text-sm text-gray-800 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500" placeholder="Your name" />
             </div>
             <div>
-              <label htmlFor="message" className="block my-2 text-sm font-medium text-white">Your message</label>
-              <textarea id="message" name="message" rows={6} value={formData.message} onChange={handleChange} required className="block p-2.5 w-full text-sm text-gray-800 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500" placeholder="Leave a comment..."></textarea>
+              <label htmlFor="message" className="block my-2 text-sm font-medium text-white">Message</label>
+              <textarea id="message" name="message" rows={6} value={formData.message} onChange={handleChange} required className="block p-2.5 w-full text-sm text-gray-800 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500" placeholder="Your message..."></textarea>
             </div>
             <div className="pt-4 animate-fadeIn h-24 ">
               <HCaptcha
